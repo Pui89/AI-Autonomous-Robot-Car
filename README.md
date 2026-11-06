@@ -85,6 +85,23 @@ This repository contains research documentation and an initial software-only con
 - **Website source repository:** [Pui89/Pui89.github.io](https://github.com/Pui89/Pui89.github.io)
 - **Motorcycle companion project:** [PUI89 AI Robot Motorcycle — EasyRide](https://github.com/Pui89/ai-robot-motorcycle)
 
+## Hugging Face model candidates — Non-Chinese origin only
+
+**PUI89 mandatory rule:** use only models with verified non-Chinese developer and checkpoint provenance. Unknown or unclear origin means exclude. This section is a candidate list only; no weights have been downloaded, installed, or evaluated.
+
+| Candidate checkpoint | Research role | Status |
+|---|---|---|
+| [google/siglip2-base-patch16-224](https://huggingface.co/google/siglip2-base-patch16-224) | Road-scene image/text similarity research | CANDIDATE — review required |
+| [facebook/dinov2-base](https://huggingface.co/facebook/dinov2-base) | Visual feature extraction for scene and change comparison | CANDIDATE — review required |
+| [microsoft/Florence-2-base](https://huggingface.co/microsoft/Florence-2-base) | Offline scene description, OCR and candidate object localization | CANDIDATE — review required |
+| [openai/whisper-tiny](https://huggingface.co/openai/whisper-tiny) | Optional multilingual voice-interface transcription | CANDIDATE — review required |
+
+Research/advisory perception only. These general-purpose models are not automotive-grade road perception and must not control steering, throttle, braking, propulsion or vehicle systems.
+
+**Adoption gates:** verify the exact checkpoint's developer, origin, immutable revision, model-card and file licence, training-data disclosures, code/dependency security, file format, hardware fit and total cost before any download or execution. No paid APIs, hosted inference, cloud GPUs, automatic downloads or direct physical control. Florence-2 requires extra source review because its documented loader uses trust_remote_code=True. All models remain research-only until independently evaluated and approved.
+
+**Shared policy:** [PUI89 Hugging Face Model Policy](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_HUGGINGFACE_MODEL_POLICY.md).
+
 ## License
 
 This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file.
