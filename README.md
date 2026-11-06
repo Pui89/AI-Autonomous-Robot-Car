@@ -12,6 +12,19 @@ The concept uses a premium electric crossover form in PUI89 deep navy and electr
 
 **The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, built prototype, or performance claim.** Sensor selection and physical packaging remain future engineering work.
 
+## EasyRide: inclusive, comfortable and practical mobility
+
+PUI89 AI Car adopts **EasyRide** as a human-centred design direction: make everyday driving easier, more comfortable and more supportive for as many people as possible. The concept is intended to consider women, older adults, new and less-confident drivers, families, and people with different body sizes, strengths and accessibility needs.
+
+- **Safety-first experience:** clear visibility, understandable warnings, conservative driver assistance, intuitive controls and reduced distraction are design priorities. Safety performance must be demonstrated through engineering analysis and testing; it is not yet validated.
+- **Comfortable, gentle ride:** investigate supportive seating, easy entry and exit, accessible reach, smooth ride characteristics, low-effort controls, climate comfort and a quiet cabin. These are design targets, not verified vehicle features.
+- **Useful, generous storage:** plan practical luggage and cargo space inside the vehicle for everyday shopping, travel bags, mobility-related items and larger bulky belongings. Storage must be designed around safe load limits, secure restraint, visibility and passenger protection; cargo must never obstruct controls, airbags, exits or the driver's view.
+- **Helpful AI assistance:** explore clear route and hazard information, parking support, vehicle-health alerts, trip preparation and simple explanations. AI should reduce workload without distracting the driver or taking control away from the human.
+- **Inclusive usability:** evaluate adjustable seating and steering reach, easy-to-read displays, simple interaction, helpful voice/interface options and accessible entry/exit. Avoid assuming that one body type, age group or level of driving experience represents everyone.
+- **Human control and fallback:** the driver remains responsible for driving. Assistance must communicate uncertainty, allow the driver to ignore or dismiss non-critical suggestions, and fail safely when information is missing or unreliable.
+
+The goal is a vehicle concept that is **safe by design, comfortable to use, practical to carry everyday and larger items, and genuinely helpful across different users**. These goals require user research, ergonomic assessment, hazard analysis, simulation and qualified vehicle testing before any real-world safety or accessibility claim can be made.
+
 ## Mission
 
 Develop a safety-first vehicle intelligence platform for environmental awareness, hazard detection, vehicle-health monitoring, predictive maintenance, and explainable driver assistance. A human driver remains responsible for vehicle control. This repository has no physical vehicle integration or actuator authority.
@@ -34,6 +47,7 @@ Develop a safety-first vehicle intelligence platform for environmental awareness
 4. Road, weather and visibility context using documented lawful data or simulation.
 5. Agentic analysis with evidence and human oversight.
 6. SHIELD risk monitoring, stale-data handling and conservative degradation.
+7. Inclusive human-machine interaction, comfort, ergonomics and practical cargo-use research.
 
 ## Working concept architecture
 
@@ -48,10 +62,11 @@ Develop a safety-first vehicle intelligence platform for environmental awareness
 ## Development stages
 
 1. Define requirements, hazards, operating boundaries and shared AI Core interfaces.
-2. Build software-only contracts and deterministic safety gates.
-3. Create synthetic scenarios and simulation adapters.
-4. Add evaluation, robustness, security and regression tests.
-5. Consider hardware only after qualified engineering, safety, cybersecurity and legal review.
+2. Gather inclusive user needs and define measurable safety, comfort, usability and cargo requirements.
+3. Build software-only contracts and deterministic safety gates.
+4. Create synthetic scenarios and simulation adapters.
+5. Add evaluation, robustness, security, ergonomics and regression tests.
+6. Consider hardware only after qualified engineering, safety, cybersecurity and legal review.
 
 ## Repository map
 
@@ -75,7 +90,7 @@ See [PUI89 Free AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). Ev
 
 ## Current truth
 
-This repository contains research documentation and an initial software-only contract/safety prototype. It does not contain a functioning car, validated perception model, real-time vehicle integration, autonomous driving capability, or certified safety system. The local contract types are provisional until aligned with the canonical shared PUI89 AI Core.
+This repository contains research documentation and an initial software-only contract/safety prototype. It does not contain a functioning car, validated perception model, real-time vehicle integration, autonomous driving capability, or certified safety system. The local contract types are provisional until aligned with the canonical shared PUI89 AI Core. EasyRide features above are design goals and research requirements, not implemented or validated vehicle capabilities.
 
 ## PUI89 portfolio links
 
