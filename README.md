@@ -12,6 +12,16 @@ The concept uses a premium electric crossover form in PUI89 deep navy and electr
 
 **The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, built prototype, or performance claim.** Sensor selection and physical packaging remain future engineering work.
 
+## Large-item interior and flexible cargo space
+
+- Design the cabin with a **large, practical cargo area** for bulky everyday items, luggage and equipment, with a wide rear hatch and a low, easy-loading threshold where vehicle packaging permits.
+- Explore split-folding rear seats that create a long, near-flat load floor while preserving safe seating and restraint use when seats are occupied.
+- Include rated cargo tie-down points, durable washable floor protection, side storage and an optional removable divider to keep loads from shifting.
+- Protect occupants with a fixed load-retention barrier or equivalent restraint strategy where required; never allow cargo to interfere with airbags, seat belts, visibility, doors or emergency exits.
+- Publish measured cargo dimensions, volume and payload only after a defined vehicle package and engineering validation. Do not promise that every oversized item will fit.
+
+This is a proposed interior packaging direction; the current exterior concept image does not establish cabin dimensions or payload.
+
 ## Mission
 
 Develop a safety-first vehicle intelligence platform for environmental awareness, hazard detection, vehicle-health monitoring, predictive maintenance, and explainable driver assistance. A human driver remains responsible for vehicle control. This repository has no physical vehicle integration or actuator authority.
@@ -44,6 +54,29 @@ Develop a safety-first vehicle intelligence platform for environmental awareness
 - Uncertainty must propagate to the advisory output.
 - Every advisory should carry its rationale, evidence references, limitations and escalation path.
 - The AI layer has no direct authority over steering, throttle, braking or propulsion.
+
+## Agentic AI, VLM and VLA research direction
+
+The roadmap explores three complementary areas. These are **planned research directions**, not claims that the models or capabilities are already implemented.
+
+### 1. Agentic AI — evidence-led vehicle intelligence
+- Explore bounded agents for observation triage, hazard-context analysis, vehicle-health reasoning, evidence retrieval and report generation.
+- Use explicit task scopes, typed inputs/outputs, provenance, confidence and uncertainty propagation.
+- Require policy checks and human approval for consequential recommendations; deny unrestricted tool use, external actions and vehicle-control authority.
+- Keep deterministic safety gates outside the agent and fail conservatively when inputs are missing, stale, conflicting or out of scope.
+
+### 2. Vision-Language Models (VLMs) — visual context with explanations
+- Research image-and-text understanding for road scenes, signs, obstacles, weather/visibility context and vehicle condition observations.
+- Evaluate source quality, timestamps, calibration, domain shift, false alarms and missed hazards using documented datasets or synthetic scenarios with verified licences.
+- Treat model descriptions as uncertain observations, not ground truth; preserve image/source references and require human review for high-impact interpretations.
+
+### 3. Vision-Language-Action (VLA) — simulation-only action proposals
+- Study translating visual/language context into **structured, non-executing proposals** in controlled simulation.
+- Represent outputs as typed **ActionProposal** records with preconditions, confidence, expected effects, risks and evidence references.
+- Route every proposal through independent deterministic safety gates and human approval. No steering, throttle, braking, gear, propulsion, ECU or vehicle-bus commands are permitted.
+- Begin with mock environments and replayable scenarios; physical integration would require a separate safety case, qualified engineering and legal approval.
+
+**Research sequence:** shared AI Core contracts → deterministic baseline → curated/synthetic scenarios → VLM evaluation → bounded agent orchestration → mock VLA proposals → robustness and safety evaluation. No new model weights, packages, paid APIs, subscriptions or cloud compute are required or authorized by this roadmap.
 
 ## Development stages
 
