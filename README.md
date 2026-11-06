@@ -1,56 +1,64 @@
 # PUI89 AI Robot Car
 
 **Repository:** `Pui89/ai-robot-car`  
-**Project type:** Advanced AI-enabled car and robotics concept; software-first, simulation-first  
-**Status:** Early-stage concept and engineering foundation — not a built, tested, autonomous, or road-certified vehicle.
+**Project type:** Advanced AI-enabled car intelligence and robotics research; software-first, simulation-first.  
+**Status:** Early-stage software scaffold. Not a built, road-tested, autonomous, or road-certified vehicle.
 
 ## Mission
 
-Develop a safety-first intelligent car platform for environmental awareness, hazard detection, vehicle-health monitoring, predictive maintenance, and explainable driver assistance. A human driver remains responsible for vehicle control. No autonomous driving or physical actuation is enabled in this initial project.
+Develop a safety-first vehicle intelligence platform for environmental awareness, hazard detection, vehicle-health monitoring, predictive maintenance, and explainable driver assistance. A human driver remains responsible for vehicle control. This repository has no physical vehicle integration or actuator authority.
 
 ## PUI89 engineering rules
 
-- **Strict zero-cost:** no paid APIs, subscriptions, cloud GPU, paid datasets, or services that can create charges.
-- **Simulation first:** no commands to physical vehicles, steering, throttle, brakes, propulsion, or batteries.
-- **Safety before features:** fail-safe behavior, human override, uncertainty reporting, and hazard analysis are mandatory.
-- **Evidence before claims:** distinguish implemented, simulated, proposed, and independently validated capabilities.
-- **Shared AI Core:** reuse PUI89 contracts and safety/evidence components; do not create duplicate core systems.
-- **Security by default:** least privilege, dependency and secret checks, protected branches, and review before release.
-- **No unsupported autonomous-driving, performance, or road-safety claims.**
+- **Strict zero-cost:** no paid APIs, subscriptions, cloud GPUs, paid datasets, metered services, or unexpected billing.
+- **Simulation first:** no physical vehicle, ECU, vehicle-bus or actuator connections.
+- **Safety before features:** uncertainty, human review, conservative failure handling and hazard analysis are mandatory.
+- **Evidence before claims:** distinguish proposed, implemented, simulation-tested, bench-tested and independently validated capabilities.
+- **Shared AI Core:** reuse canonical PUI89 contracts and services; local compatibility types are temporary and must not become a competing core.
+- **Security by default:** least privilege, dependency/provenance review, protected changes and no secrets in source.
+- **No unsupported autonomous-driving, roadworthiness, waterproofing, fire-resistance or safety claims.**
 
-## Initial capability areas
+## Capability research areas
 
 1. Environmental perception and hazard-awareness research.
-2. Driver-assistance concepts with clear, prioritized human-facing warnings.
-3. Vehicle health monitoring for battery, electrical, thermal, and component anomalies.
-4. Road, weather, visibility, and nearby-object context where lawful data or simulation supports it.
-5. Predictive maintenance with traceable evidence and uncertainty.
-6. Safety supervision, stale-data detection, conflict handling, and conservative degradation.
+2. Human-facing driver-assistance concepts.
+3. Vehicle-health and predictive-maintenance research.
+4. Road, weather and visibility context using documented lawful data or simulation.
+5. Agentic analysis with evidence and human oversight.
+6. SHIELD risk monitoring, stale-data handling and conservative degradation.
 
 ## Development stages
 
-1. Define requirements, hazards, operating boundaries, and shared AI Core interfaces.
-2. Build software-only data contracts and deterministic baseline logic.
-3. Create synthetic/simulation scenarios; do not connect to a real car.
-4. Add evaluation, robustness, security, and regression tests.
-5. Consider hardware only after documented safety reviews, legal review, and qualified engineering validation.
+1. Define requirements, hazards, operating boundaries and shared AI Core interfaces.
+2. Build software-only contracts and deterministic safety gates.
+3. Create synthetic scenarios and simulation adapters.
+4. Add evaluation, robustness, security and regression tests.
+5. Consider hardware only after qualified engineering, safety, cybersecurity and legal review.
 
 ## Repository map
 
-- `docs/PROJECT_PLAN.md` — scope, architecture, and staged roadmap.
-- `docs/SAFETY_CASE.md` — hazards, safeguards, and validation boundaries.
-- `SECURITY.md` — vulnerability reporting and security policy.
-- `tests/` — software-only tests (to be implemented).
-- `.github/workflows/quality.yml` — dependency-light automated checks.
+- `docs/PROJECT_PLAN.md` — scope and staged roadmap.
+- `docs/AI_ARCHITECTURE.md` — software architecture and data flow.
+- `docs/AGENTIC_AI_SYSTEM.md` — agent roles and authority boundaries.
+- `docs/UNIVERSAL_SHIELD.md` — cross-project safety and resilience standard.
+- `docs/AUTONOMOUS_SIMULATION.md` — simulation-only research plan.
+- `docs/PREDICTIVE_MAINTENANCE.md` — health and maintenance research.
+- `docs/SAFETY_CASE.md` — hazards and safeguards.
+- `docs/THREAT_MODEL.md` and `SECURITY.md` — security risks and reporting.
+- `docs/AI_BENCHMARKS.md` — reproducible evaluation protocol.
+- `docs/IMPLEMENTATION_STATUS.md` — implemented, missing and next work.
+- `pui89_car/` — dependency-free local compatibility prototype and safety gates.
+- `tests/` — standard-library unit tests.
+- `.github/workflows/quality.yml` — automated documentation, test and compile checks.
 
 ## Free AI and advanced engineering resources
 
-Use the curated [PUI89 Free AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). It covers local AI runtimes, agentic workflows, computer vision, vehicle/robot simulation, CAD, testing and security tools. All adoption is subject to the strict zero-cost gate, exact licence review, hardware feasibility checks and simulation-only safety boundary.
+See [PUI89 Free AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). Every tool, model, dataset and hosted feature requires exact licence, provenance, hardware and cost review before adoption. Free software does not guarantee free model weights, compute, datasets or commercial rights.
 
 ## Current truth
 
-This repository is an initial software and research scaffold. It does not contain a functioning car, validated perception model, real-time vehicle integration, or certified safety system. All outputs are advisory prototypes until independently validated.
+This repository contains research documentation and an initial software-only contract/safety prototype. It does not contain a functioning car, validated perception model, real-time vehicle integration, autonomous driving capability, or certified safety system. The local contract types are provisional until aligned with the canonical shared PUI89 AI Core.
 
 ## License
 
-No license has been selected yet. Unless and until a license is added, standard copyright restrictions apply; do not assume this repository is open source.
+No license has been selected. Unless and until one is added, standard copyright restrictions apply; do not assume this repository is open source.
