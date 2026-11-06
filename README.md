@@ -45,6 +45,29 @@ Develop a safety-first vehicle intelligence platform for environmental awareness
 - Every advisory should carry its rationale, evidence references, limitations and escalation path.
 - The AI layer has no direct authority over steering, throttle, braking or propulsion.
 
+## Agentic AI, VLM and VLA research direction
+
+The roadmap explores three complementary areas. These are **planned research directions**, not claims that the models or capabilities are already implemented.
+
+### 1. Agentic AI — evidence-led vehicle intelligence
+- Explore bounded agents for observation triage, hazard-context analysis, vehicle-health reasoning, evidence retrieval and report generation.
+- Use explicit task scopes, typed inputs/outputs, provenance, confidence and uncertainty propagation.
+- Require policy checks and human approval for consequential recommendations; deny unrestricted tool use, external actions and vehicle-control authority.
+- Keep deterministic safety gates outside the agent and fail conservatively when inputs are missing, stale, conflicting or out of scope.
+
+### 2. Vision-Language Models (VLMs) — visual context with explanations
+- Research image-and-text understanding for road scenes, signs, obstacles, weather/visibility context and vehicle condition observations.
+- Evaluate source quality, timestamps, calibration, domain shift, false alarms and missed hazards using documented datasets or synthetic scenarios with verified licences.
+- Treat model descriptions as uncertain observations, not ground truth; preserve image/source references and require human review for high-impact interpretations.
+
+### 3. Vision-Language-Action (VLA) — simulation-only action proposals
+- Study translating visual/language context into **structured, non-executing proposals** in controlled simulation.
+- Represent outputs as typed **ActionProposal** records with preconditions, confidence, expected effects, risks and evidence references.
+- Route every proposal through independent deterministic safety gates and human approval. No steering, throttle, braking, gear, propulsion, ECU or vehicle-bus commands are permitted.
+- Begin with mock environments and replayable scenarios; physical integration would require a separate safety case, qualified engineering and legal approval.
+
+**Research sequence:** shared AI Core contracts → deterministic baseline → curated/synthetic scenarios → VLM evaluation → bounded agent orchestration → mock VLA proposals → robustness and safety evaluation. No new model weights, packages, paid APIs, subscriptions or cloud compute are required or authorized by this roadmap.
+
 ## Development stages
 
 1. Define requirements, hazards, operating boundaries and shared AI Core interfaces.
