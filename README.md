@@ -12,6 +12,16 @@ The concept uses a premium electric crossover form in PUI89 deep navy and electr
 
 **The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, built prototype, or performance claim.** Sensor selection and physical packaging remain future engineering work.
 
+## Large-item interior and flexible cargo space
+
+- Design the cabin with a **large, practical cargo area** for bulky everyday items, luggage and equipment, with a wide rear hatch and a low, easy-loading threshold where vehicle packaging permits.
+- Explore split-folding rear seats that create a long, near-flat load floor while preserving safe seating and restraint use when seats are occupied.
+- Include rated cargo tie-down points, durable washable floor protection, side storage and an optional removable divider to keep loads from shifting.
+- Protect occupants with a fixed load-retention barrier or equivalent restraint strategy where required; never allow cargo to interfere with airbags, seat belts, visibility, doors or emergency exits.
+- Publish measured cargo dimensions, volume and payload only after a defined vehicle package and engineering validation. Do not promise that every oversized item will fit.
+
+This is a proposed interior packaging direction; the current exterior concept image does not establish cabin dimensions or payload.
+
 ## Mission
 
 Develop a safety-first vehicle intelligence platform for environmental awareness, hazard detection, vehicle-health monitoring, predictive maintenance, and explainable driver assistance. A human driver remains responsible for vehicle control. This repository has no physical vehicle integration or actuator authority.
