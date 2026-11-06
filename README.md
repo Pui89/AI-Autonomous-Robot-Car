@@ -61,4 +61,8 @@ This repository contains research documentation and an initial software-only con
 
 ## License
 
-No license has been selected. Unless and until one is added, standard copyright restrictions apply; do not assume this repository is open source.
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file.
+
+Unless a file or component states otherwise, the Apache-2.0 licence applies to the original project materials in this repository. Third-party datasets, model weights, images, trademarks and other externally sourced assets retain their own licences and terms; check their provenance before use or redistribution.
+
+Copyright 2026 Pui89.
