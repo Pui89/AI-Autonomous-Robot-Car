@@ -1,8 +1,16 @@
 # PUI89 AI Robot Car
 
+![PUI89 AI Car — Vehicle Intelligence Concept](docs/images/pui89-ai-car-concept.svg)
+
 **Repository:** `Pui89/ai-robot-car`  
-**Project type:** Advanced AI-enabled car intelligence and robotics research; software-first, simulation-first.  
+**Project type:** Advanced AI-enabled vehicle intelligence and robotics research; software-first, simulation-first.  
 **Status:** Early-stage software scaffold. Not a built, road-tested, autonomous, or road-certified vehicle.
+
+## Design concept
+
+The concept uses a premium electric crossover form in PUI89 deep navy and electric cyan. The illustrative sensor layout communicates a future perception envelope (camera, radar, lidar and proximity sensing), while the software architecture remains human-driver-first: AI produces evidence-linked advisories, not steering, throttle or braking commands.
+
+**The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, built prototype, or performance claim.** Sensor selection and physical packaging remain future engineering work.
 
 ## Mission
 
@@ -26,6 +34,16 @@ Develop a safety-first vehicle intelligence platform for environmental awareness
 4. Road, weather and visibility context using documented lawful data or simulation.
 5. Agentic analysis with evidence and human oversight.
 6. SHIELD risk monitoring, stale-data handling and conservative degradation.
+
+## Working concept architecture
+
+`Observation → WorldState → Hazard Analysis → Safety Gate → Human-facing Advisory → Evidence Record`
+
+- Inputs must preserve source, timestamp, quality, confidence, provenance and freshness.
+- Missing, stale, conflicting or out-of-range inputs must not be silently treated as facts.
+- Uncertainty must propagate to the advisory output.
+- Every advisory should carry its rationale, evidence references, limitations and escalation path.
+- The AI layer has no direct authority over steering, throttle, braking or propulsion.
 
 ## Development stages
 
