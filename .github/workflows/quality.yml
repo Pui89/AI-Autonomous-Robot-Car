@@ -9,6 +9,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: quality-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   basic-checks:
     runs-on: ubuntu-latest
@@ -22,5 +26,20 @@ jobs:
           test -s SECURITY.md
           test -s docs/PROJECT_PLAN.md
           test -s docs/SAFETY_CASE.md
+          test -s docs/UNIVERSAL_SHIELD.md
+          test -s docs/AI_ARCHITECTURE.md
+          test -s docs/AGENTIC_AI_SYSTEM.md
+          test -s docs/AUTONOMOUS_SIMULATION.md
+          test -s docs/PREDICTIVE_MAINTENANCE.md
+          test -s docs/THREAT_MODEL.md
+          test -s docs/AI_BENCHMARKS.md
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run dependency-free unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Compile Python source
+        run: python -m compileall -q pui89_car tests
       - name: Check whitespace errors
         run: git diff --check
