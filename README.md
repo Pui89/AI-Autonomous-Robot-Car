@@ -66,3 +66,8 @@ This project is licensed under the **Apache License 2.0**. See the [LICENSE](LIC
 Unless a file or component states otherwise, the Apache-2.0 licence applies to the original project materials in this repository. Third-party datasets, model weights, images, trademarks and other externally sourced assets retain their own licences and terms; check their provenance before use or redistribution.
 
 Copyright 2026 Pui89.
+
+
+## Commercial product readiness
+
+This project follows the [PUI89 Commercial Product & Company-Readiness Standard](PUI89_COMMERCIAL_PRODUCT_STANDARD.md). The root [LICENSE](LICENSE) is Apache-2.0 and permits commercial use subject to its terms; third-party assets retain their own terms. Commercial readiness, safety, road approval and performance require evidence.
