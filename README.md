@@ -19,6 +19,16 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 
 **Development principle:** distinguish implemented capabilities, tested software behaviour, simulation results, proposed designs and independently validated real-world performance. A concept or passing software test is not represented as a commercially validated physical product.
 
+> **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
+> 
+> **Project:** PUI89 AI Robot Car  
+> **Focus:** Human-driver-first intelligent mobility and vehicle-intelligence research concept  
+> **Development stage:** Early software scaffold and design requirements; no functioning vehicle, road test or certification is established.
+> 
+> **Project website:** [English](https://pui89.github.io/ai-robot-car.html) · [ภาษาไทย](https://pui89.github.io/ai-robot-car-th.html) · [PUI89 portfolio](https://pui89.github.io/)
+> 
+> **Validation boundary:** AI outputs are advisory research concepts only; no autonomous steering, throttle or braking is enabled or claimed.
+
 ## Commercial readiness progress
 
 **29% — evidence-based commercial-readiness estimate**  
