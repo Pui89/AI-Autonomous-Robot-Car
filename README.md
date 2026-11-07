@@ -1,5 +1,10 @@
 # PUI89 AI Robot Car
 
+## Open-source-first engineering
+
+PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
+
+
 
 ## PUI89 — Intelligent Systems. Verifiable Decisions. Safer Outcomes.
 
