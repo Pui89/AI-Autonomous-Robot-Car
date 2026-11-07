@@ -114,9 +114,9 @@ Develop a safety-first vehicle intelligence platform for environmental awareness
 - `tests/` — standard-library unit tests.
 - `.github/workflows/quality.yml` — automated documentation, test and compile checks.
 
-## Free AI and advanced engineering resources
+## AI and advanced engineering resources
 
-See [PUI89 Free AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). Every tool, model, dataset and hosted feature requires exact licence, provenance, hardware and cost review before adoption. open-source software does not guarantee free model weights, compute, datasets or commercial rights.
+See [PUI89 AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). Every tool, model, dataset and hosted feature requires exact licence, provenance, hardware and cost review before adoption. open-source software does not guarantee free model weights, compute, datasets or commercial rights.
 
 ## Current truth
 
