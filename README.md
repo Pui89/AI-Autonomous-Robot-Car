@@ -1,5 +1,10 @@
 # PUI89 AI Robot Car
 
+## Open-source-first engineering
+
+PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
+
+
 
 ## PUI89 — Intelligent Systems. Verifiable Decisions. Safer Outcomes.
 
@@ -219,7 +224,7 @@ Project-specific controls and review requirements:
 - This repository has no physical vehicle or actuator authority; AI output is advisory only and must never be wired to steering, throttle, braking or vehicle buses without a separately approved safety programme.
 - Keep CI least-privilege and do not expose secrets to untrusted pull-request code.
 
-A scan or passing test is evidence only for the checks actually run; it does not prove the repository is free of malware or vulnerabilities.
+A scan or passing test is evidence only for the checks actually run; it does not establish whether the repository contains malware or vulnerabilities.
 
 ## PUI89 seven-dimension quality recommendations
 
