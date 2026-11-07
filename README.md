@@ -61,7 +61,7 @@ Develop a safety-first vehicle intelligence platform for environmental awareness
 
 ## PUI89 engineering rules
 
-- **Strict zero-cost:** no paid APIs, subscriptions, cloud GPUs, paid datasets, metered services, or unexpected billing.
+- **Strict local-first:** external services and datasets require prior review.
 - **Simulation first:** no physical vehicle, ECU, vehicle-bus or actuator connections.
 - **Safety before features:** uncertainty, human review, conservative failure handling and hazard analysis are mandatory.
 - **Evidence before claims:** distinguish proposed, implemented, simulation-tested, bench-tested and independently validated capabilities.
@@ -110,13 +110,13 @@ Develop a safety-first vehicle intelligence platform for environmental awareness
 - `docs/THREAT_MODEL.md` and `SECURITY.md` — security risks and reporting.
 - `docs/AI_BENCHMARKS.md` — reproducible evaluation protocol.
 - `docs/IMPLEMENTATION_STATUS.md` — implemented, missing and next work.
-- `pui89_car/` — dependency-free local compatibility prototype and safety gates.
+- `pui89_car/` — dependency-local compatibility prototype and safety gates.
 - `tests/` — standard-library unit tests.
 - `.github/workflows/quality.yml` — automated documentation, test and compile checks.
 
 ## Free AI and advanced engineering resources
 
-See [PUI89 Free AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). Every tool, model, dataset and hosted feature requires exact licence, provenance, hardware and cost review before adoption. Free software does not guarantee free model weights, compute, datasets or commercial rights.
+See [PUI89 Free AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). Every tool, model, dataset and hosted feature requires exact licence, provenance, hardware and cost review before adoption. open-source software does not guarantee free model weights, compute, datasets or commercial rights.
 
 ## Current truth
 
@@ -145,5 +145,5 @@ This repository now includes real Hugging Face checkpoint adapters in [`pui89_mo
 
 - **OWLv2:** `google/owlv2-base-patch16-ensemble` for text-conditioned object proposals.
 - **Intel DPT-Hybrid:** `Intel/dpt-hybrid-midas` for relative scene depth where appropriate; not calibrated distance or physical depth.
-- **Zero-cost default:** no packages or model weights are installed/downloaded automatically; CPU-only inference, local cache only by default, no hosted inference API or cloud GPU.
+- **local-first default:** no packages or model weights are installed/downloaded automatically; CPU-only inference, local cache only by default, no hosted inference API or cloud GPU.
 - **Evidence status:** adapter code is added; model inference and project-specific accuracy are NOT YET TESTED. Outputs remain uncertain observations for human review, never actuator commands.
