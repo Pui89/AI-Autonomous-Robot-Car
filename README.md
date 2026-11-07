@@ -4,6 +4,24 @@
 
 <table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/ai-robot-car.html"><img src="https://pui89.github.io/qr/ai-robot-car-en.png" width="160" alt="PUI89 AI Robot Car English website QR code"></a><br><a href="https://pui89.github.io/ai-robot-car.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/ai-robot-car-th.html"><img src="https://pui89.github.io/qr/ai-robot-car-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI Robot Car"></a><br><a href="https://pui89.github.io/ai-robot-car-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
 
+## PUI89 product maturity snapshot — 7 November 2026
+
+**Strategic direction: From AI Projects to AI Products.**  
+**Current maturity: Grade 2 — Early Engineering Foundation.** This repository contains research documentation and an initial software-only contract/safety prototype. It is not a functioning or road-tested vehicle.
+
+| Area | Verified position |
+|---|---|
+| Product definition | Human-driver-first AI vehicle intelligence concept with EasyRide priorities for safety, comfort, inclusive usability and practical cargo storage. |
+| Software and AI | Initial contracts/safety logic, tests and opt-in Hugging Face adapter code are documented. Model inference and vehicle-specific accuracy are not yet tested; local contract types still require alignment with the canonical shared PUI89 AI Core. |
+| Simulation | Simulation-first research direction; no validated road, vehicle-dynamics or autonomous-driving performance is established. |
+| Physical product | No functioning car, verified sensor layout, production CAD/BOM, vehicle integration, roadworthiness or certified safety system is claimed. |
+
+**Next product gate:** align the software contracts with the shared AI Core; define driver-assistance use cases, hazards, data quality and human-control boundaries; build deterministic synthetic scenarios and reproducible evaluations. In parallel, convert EasyRide comfort, accessibility and cargo goals into measurable user and packaging requirements.
+
+**Product discipline:** AI remains advisory; the human driver retains control. No autonomous-driving, road-safety, waterproofing, fire-resistance or production-readiness claims are made. No paid API, cloud GPU, automatic model download or physical vehicle actuation is part of this update.
+
+
+
 ![PUI89 AI Car — Vehicle Intelligence Concept](docs/images/pui89-ai-car-concept.svg)
 
 **Repository:** `Pui89/ai-robot-car`  
