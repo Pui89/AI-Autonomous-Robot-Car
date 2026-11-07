@@ -1,5 +1,9 @@
 # PUI89 AI Robot Car
 
+## Project website QR codes
+
+<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/ai-robot-car.html"><img src="https://pui89.github.io/qr/ai-robot-car-en.png" width="160" alt="PUI89 AI Robot Car English website QR code"></a><br><a href="https://pui89.github.io/ai-robot-car.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/ai-robot-car-th.html"><img src="https://pui89.github.io/qr/ai-robot-car-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI Robot Car"></a><br><a href="https://pui89.github.io/ai-robot-car-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
+
 ![PUI89 AI Car — Vehicle Intelligence Concept](docs/images/pui89-ai-car-concept.svg)
 
 **Repository:** `Pui89/ai-robot-car`  
