@@ -1,25 +1,30 @@
-name: Quality checks
-
+name: PUI89 AI Robot Car Quality and Shared Core Contract Checks
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
-
 permissions:
   contents: read
-
 concurrency:
   group: quality-${{ github.ref }}
   cancel-in-progress: true
-
 jobs:
   basic-checks:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Check out source
+      - name: Check out AI Robot Car
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check out pinned Shared AI Core schemas
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/PUI89-Shared-AI-Core
+          ref: e762f38f1e34ddf2ce9e22e12605bc08aa493ff9
+          path: shared-ai-core
+          persist-credentials: false
       - name: Check required project documents
         run: |
           test -s README.md
@@ -33,11 +38,12 @@ jobs:
           test -s docs/PREDICTIVE_MAINTENANCE.md
           test -s docs/THREAT_MODEL.md
           test -s docs/AI_BENCHMARKS.md
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - name: Run dependency-free unit tests
+        env:
+          PUI89_SHARED_CORE_DIR: shared-ai-core
         run: python -m unittest discover -s tests -v
       - name: Compile Python source
         run: python -m compileall -q pui89_car tests
