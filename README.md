@@ -1,5 +1,10 @@
 # PUI89 AI Robot Car
 
+
+## Public privacy boundary
+
+This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
+
 ## Open-source-first engineering
 
 PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
@@ -112,16 +117,6 @@ Develop a safety-first vehicle intelligence platform for environmental awareness
 5. Agentic analysis with evidence and human oversight.
 6. SHIELD risk monitoring, stale-data handling and conservative degradation.
 7. Inclusive human-machine interaction, comfort, ergonomics and practical cargo-use research.
-
-## Working concept architecture
-
-`Observation → WorldState → Hazard Analysis → Safety Gate → Human-facing Advisory → Evidence Record`
-
-- Inputs must preserve source, timestamp, quality, confidence, provenance and freshness.
-- Missing, stale, conflicting or out-of-range inputs must not be silently treated as facts.
-- Uncertainty must propagate to the advisory output.
-- Every advisory should carry its rationale, evidence references, limitations and escalation path.
-- The AI layer has no direct authority over steering, throttle, braking or propulsion.
 
 ## Development stages
 
@@ -286,22 +281,3 @@ Scores are awarded only through a dated review with a defined scope, version/com
 This score is separate from any commercial-readiness estimate and is not certification, safety approval or an investment rating.
 <!-- PUI89_PROJECT_STRENGTH_SCORECARD:END -->
 
-## Materials & Hardware — Research Plan
-
-**Status: software and autonomous-vehicle research concept.** No roadworthy, autonomous or safety-certified vehicle is claimed.
-
-| Subsystem | Candidate materials / hardware | Purpose and checks before selection |
-|---|---|---|
-| Chassis/body | Automotive-grade steel or aluminium structure; engineered polymer/composite panels | Verify crashworthiness, fatigue, corrosion and qualified vehicle engineering |
-| Drive/steering | Research-scale drive motors/actuators or controlled test platform; steering-angle sensing | Verify torque, speed, redundancy, limits and safe isolation; no public-road actuation |
-| Braking | Independent test-rig braking components and wheel-speed sensing | Verify fail-safe design, thermal capacity, redundancy and qualified validation |
-| Perception | RGB cameras, optional depth/LiDAR/radar sensors and protected mounts | Verify detection range, weather, calibration, occlusion and sensor disagreement |
-| Position/motion | GNSS, IMU, wheel encoders and vehicle-state sensors | Verify accuracy, drift, synchronization and degraded modes |
-| Compute/control | Edge computer, independent safety controller and isolated interfaces | Verify watchdogs, access control, deterministic stop and fault containment |
-| Power | Protected battery, BMS, fuses, contactors and isolated converters | Verify voltage/current budget, thermal management, short-circuit and fire controls |
-| Enclosure/wiring | Automotive-rated connectors, protected harnesses, sealed enclosures and strain relief | Verify temperature, vibration, ingress, EMC and serviceability |
-| Test infrastructure | Simulation, closed-course markers, soft targets, data logger and emergency stop | Verify test protocol, exclusion zone and independent stop |
-
-Development must remain simulation-first and hardware-disconnected. No software output is authorised to control a real steering, throttle, brake or propulsion system. Physical testing requires a qualified safety case, controlled site, independent emergency stop, legal review and competent supervision. Automotive-marketed parts are not automatically suitable for autonomous safety functions.
-
-**Procurement rule:** research only. No purchases, subscriptions, supplier contact or paid services without explicit approval. Verify part numbers, datasheets, safety ratings, licences, price, shipping and test suitability.
