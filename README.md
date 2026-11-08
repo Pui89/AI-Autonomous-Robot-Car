@@ -285,3 +285,23 @@ Scores are awarded only through a dated review with a defined scope, version/com
 
 This score is separate from any commercial-readiness estimate and is not certification, safety approval or an investment rating.
 <!-- PUI89_PROJECT_STRENGTH_SCORECARD:END -->
+
+## Materials & Hardware — Research Plan
+
+**Status: software and autonomous-vehicle research concept.** No roadworthy, autonomous or safety-certified vehicle is claimed.
+
+| Subsystem | Candidate materials / hardware | Purpose and checks before selection |
+|---|---|---|
+| Chassis/body | Automotive-grade steel or aluminium structure; engineered polymer/composite panels | Verify crashworthiness, fatigue, corrosion and qualified vehicle engineering |
+| Drive/steering | Research-scale drive motors/actuators or controlled test platform; steering-angle sensing | Verify torque, speed, redundancy, limits and safe isolation; no public-road actuation |
+| Braking | Independent test-rig braking components and wheel-speed sensing | Verify fail-safe design, thermal capacity, redundancy and qualified validation |
+| Perception | RGB cameras, optional depth/LiDAR/radar sensors and protected mounts | Verify detection range, weather, calibration, occlusion and sensor disagreement |
+| Position/motion | GNSS, IMU, wheel encoders and vehicle-state sensors | Verify accuracy, drift, synchronization and degraded modes |
+| Compute/control | Edge computer, independent safety controller and isolated interfaces | Verify watchdogs, access control, deterministic stop and fault containment |
+| Power | Protected battery, BMS, fuses, contactors and isolated converters | Verify voltage/current budget, thermal management, short-circuit and fire controls |
+| Enclosure/wiring | Automotive-rated connectors, protected harnesses, sealed enclosures and strain relief | Verify temperature, vibration, ingress, EMC and serviceability |
+| Test infrastructure | Simulation, closed-course markers, soft targets, data logger and emergency stop | Verify test protocol, exclusion zone and independent stop |
+
+Development must remain simulation-first and hardware-disconnected. No software output is authorised to control a real steering, throttle, brake or propulsion system. Physical testing requires a qualified safety case, controlled site, independent emergency stop, legal review and competent supervision. Automotive-marketed parts are not automatically suitable for autonomous safety functions.
+
+**Procurement rule:** research only. No purchases, subscriptions, supplier contact or paid services without explicit approval. Verify part numbers, datasheets, safety ratings, licences, price, shipping and test suitability.
