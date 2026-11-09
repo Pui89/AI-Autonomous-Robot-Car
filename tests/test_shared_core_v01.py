@@ -3,6 +3,8 @@ import os
 import unittest
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+
 from pui89_car.contracts import ActionProposal, FailureReport, Observation, WorldState
 from pui89_car.shared_core_v01 import build_car_v01_records
 
@@ -38,10 +40,7 @@ class CarSharedCoreV01Tests(unittest.TestCase):
             build_car_v01_records(obs, state, proposal)
 
     def test_shared_core_schema_required_fields_match(self):
-        core_dir = os.environ.get("PUI89_SHARED_CORE_DIR")
-        if not core_dir:
-            self.skipTest("Shared AI Core checkout is supplied by GitHub Actions")
-        schema_dir = Path(core_dir) / "schemas" / "v0.1"
+        schema_dir = ROOT / "schemas" / "v0.1"
         bundle = self.make_bundle(FailureReport("stale_input", "moderate", ("sim-car-001",)))
         for key, filename in (
             ("observation","observation.schema.json"),
