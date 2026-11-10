@@ -1,0 +1,42 @@
+{
+  "profile_version": "0.1.0",
+  "project_id": "ai-autonomous-robot-car",
+  "project_name": "AI Autonomous Robot Car",
+  "integration_status": "profile_documented_runtime_adapter_pending",
+  "shared_core": {
+    "repository": "Pui89/PUI89-Shared-AI-Core",
+    "contract": "anomaly_evidence",
+    "contract_version": "0.1.0",
+    "connection_status": "not_connected"
+  },
+  "intended_modalities": [
+    "rgb",
+    "lidar",
+    "depth",
+    "imu"
+  ],
+  "candidate_scope": [
+    "Camera obstruction, sensor dropout and perception input corruption",
+    "Cross-sensor disagreement and unexpected road-scene changes"
+  ],
+  "explicit_non_goals": [
+    "Does not replace validated ADAS, collision avoidance or driver authority",
+    "No steering, braking or vehicle motion command from anomaly scores"
+  ],
+  "required_gates": [
+    "Require time sync, calibration, sensor health and coordinate-frame checks",
+    "Fail closed on missing/conflicting evidence or out-of-distribution inputs",
+    "Human review; independent vehicle safety systems remain authoritative",
+    "execution_authorized=false",
+    "no paid API, subscription, cloud GPU, model download or new dependency without explicit approval"
+  ],
+  "model_adapters": {
+    "PaDiM": "not_configured",
+    "PatchCore": "not_configured",
+    "EfficientAD": "not_configured"
+  },
+  "model_weights": "not_downloaded",
+  "dataset_status": "no_dataset_authorised_or_loaded_by_this_profile",
+  "evidence_status": "documentation_only; no model accuracy, runtime integration, hardware validation or field safety is claimed",
+  "cost_policy": "zero-cost-first; no external services or downloads"
+}
