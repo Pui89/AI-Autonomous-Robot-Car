@@ -281,3 +281,8 @@ Scores are awarded only through a dated review with a defined scope, version/com
 This score is separate from any commercial-readiness estimate and is not certification, safety approval or an investment rating.
 <!-- PUI89_PROJECT_STRENGTH_SCORECARD:END -->
 
+
+
+## Spatial Intelligence integration
+
+See [the project-specific spatial integration profile](docs/spatial-intelligence/README.md). This is a documented integration contract; runtime sensor integration and physical validation remain pending.
