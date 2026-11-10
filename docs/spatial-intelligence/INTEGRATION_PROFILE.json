@@ -1,0 +1,39 @@
+{
+  "profile_version": "0.1.0",
+  "project_id": "ai-autonomous-robot-car",
+  "project_name": "AI Autonomous Robot Car",
+  "integration_status": "profile_added_runtime_integration_pending",
+  "shared_core": {
+    "repository": "Pui89/PUI89-Shared-AI-Core",
+    "pull_request": "https://github.com/Pui89/PUI89-Shared-AI-Core/pull/26",
+    "release_status": "draft_not_merged"
+  },
+  "intended_use": "Advisory road-scene geometry, obstacle-relative position and scene-change evidence.",
+  "recommended_modalities": [
+    "rgb",
+    "lidar",
+    "depth",
+    "imu"
+  ],
+  "planned_spatial_tasks": [
+    "3D obstacle position and approximate dimensions",
+    "Road-scene geometry and temporal change (after timestamps are validated)",
+    "Spatial evidence references for human review"
+  ],
+  "limitations_and_safety_boundaries": [
+    "No road-boundary inference or collision prediction is implemented.",
+    "No braking, steering, throttle or autonomous driving authority.",
+    "Vehicle dynamics, weather, calibration and road testing remain unvalidated."
+  ],
+  "common_gates": [
+    "usable evidence quality",
+    "valid calibration status before sensor fusion",
+    "matching coordinate frames",
+    "timestamp synchronization within a validated project-specific tolerance",
+    "uncertainty and sensor-health assessment",
+    "human review required",
+    "execution_authorized=false"
+  ],
+  "evidence_status": "No real sensor integration, model accuracy, field validation, hardware safety or certification is claimed.",
+  "cost_policy": "standard-library-first; no paid APIs, subscriptions, cloud GPU, automatic model downloads or additional sensor purchases"
+}
