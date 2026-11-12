@@ -1,0 +1,8 @@
+{
+  "schema_version": "0.1.0",
+  "proposal_id": "invalid-proposal",
+  "created_at": "2026-11-13T00:00:00Z",
+  "objective": "Invalid fixture.",
+  "actions": [],
+  "authority": {"mode": "autonomous", "human_approval_required": false, "execution_authorized": true}
+}
