@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1.0",
+  "failure_id": "car-failure-001",
+  "occurred_at": "2026-11-13T00:00:00Z",
+  "system_or_component": "signal-ingestion",
+  "severity": "unknown",
+  "summary": "Synthetic missing-provenance scenario.",
+  "observed_result": "Advisory remains unknown.",
+  "evidence_refs": [],
+  "response_status": "open"
+}
