@@ -5,22 +5,54 @@ truth, access sensors, invoke models, or authorize vehicle control.
 """
 from __future__ import annotations
 
+from datetime import datetime
 from typing import Any
 
 CONTRACT_VERSION = "0.1.0"
 PROJECT_ID = "pui89-ai-car"
+_QUALITY_MAP = {
+    "good": "usable",
+    "degraded": "degraded",
+    "invalid": "invalid",
+    "unknown": "unknown",
+}
+_SOURCE_TYPES = {"sensor", "human", "dataset", "simulation", "software", "external"}
+_MODALITIES = {"rgb", "depth", "thermal", "audio", "lidar", "radar", "imu", "gps", "xray", "chemical", "text", "other"}
+
+
+def _require_aware_timestamp(value: Any, field_name: str) -> None:
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError(f"{field_name} must be a non-empty RFC 3339 timestamp")
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError as exc:
+        raise ValueError(f"{field_name} must be a valid RFC 3339 timestamp") from exc
+    if parsed.tzinfo is None or parsed.utcoffset() is None:
+        raise ValueError(f"{field_name} must include a timezone")
 
 
 def signal_to_observation(
     signal: Any, *, observation_id: str, modality: str,
     source_type: str, recorded_at: str,
 ) -> dict[str, Any]:
-    """Serialize one VehicleSignal into the shared Observation vocabulary."""
-    if source_type not in {"sensor", "human", "dataset", "simulation", "software", "external"}:
+    """Serialize one validated signal into the shared Observation vocabulary."""
+    if source_type not in _SOURCE_TYPES:
         raise ValueError("unsupported Shared AI Core source_type")
-    if modality not in {"rgb", "depth", "thermal", "audio", "lidar", "radar", "imu", "gps", "xray", "chemical", "text", "other"}:
+    if modality not in _MODALITIES:
         raise ValueError("unsupported Shared AI Core modality")
-    quality = "usable" if signal.quality == "good" else "degraded"
+    if not isinstance(observation_id, str) or not observation_id.strip():
+        raise ValueError("observation_id must be a non-empty string")
+    if not isinstance(signal.source, str) or not signal.source.strip():
+        raise ValueError("signal source must be a non-empty string")
+    if not isinstance(signal.evidence_ref, str) or not signal.evidence_ref.strip():
+        raise ValueError("signal evidence_ref must be a non-empty string")
+    if signal.value is not None and not isinstance(signal.value, bool):
+        raise ValueError("signal value must be boolean or None")
+    if signal.quality not in _QUALITY_MAP:
+        raise ValueError("unsupported signal quality")
+    _require_aware_timestamp(signal.observed_at, "signal.observed_at")
+    _require_aware_timestamp(recorded_at, "recorded_at")
+
     return {
         "schema_version": CONTRACT_VERSION,
         "observation_id": observation_id,
@@ -28,8 +60,14 @@ def signal_to_observation(
         "source": {"source_id": signal.source, "source_type": source_type},
         "modality": modality,
         "payload": {"signal_name": signal.name, "value": signal.value},
-        "quality": {"status": quality, "notes": "Mapped from the AI Car signal quality label; not independently calibrated."},
-        "uncertainty": {"description": "Signal uncertainty is not quantified by this adapter.", "method": "not_assessed"},
+        "quality": {
+            "status": _QUALITY_MAP[signal.quality],
+            "notes": "Mapped from the AI Car signal quality label; not independently calibrated.",
+        },
+        "uncertainty": {
+            "description": "Signal uncertainty is not quantified by this adapter.",
+            "method": "not_assessed",
+        },
         "provenance": {"recorded_at": recorded_at, "dataset_or_file": signal.evidence_ref},
     }
 
