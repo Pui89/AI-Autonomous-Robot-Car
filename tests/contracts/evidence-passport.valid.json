@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "passport_id": "car-passport-001",
+  "created_at": "2026-11-13T00:00:00Z",
+  "project_id": "pui89-ai-car",
+  "conclusion": {"statement": "Avoid the water-covered route.", "status": "conditional"},
+  "evidence": {
+    "supporting_refs": ["synthetic://car/observation-001"],
+    "conflicting_refs": [],
+    "missing_items": ["Water depth", "Water current", "Independent sensor verification"],
+    "provenance_status": "partial"
+  },
+  "uncertainty": {
+    "description": "Synthetic signal; physical conditions are unknown.",
+    "assessment_method": "Deterministic fixture mapping.",
+    "calibration_status": "not_assessed"
+  },
+  "safety": {"gate_status": "not_evaluated", "risk_level": "high", "gate_notes": "No actuation authority."},
+  "human_review": {"review_required": true, "status": "not_reviewed"},
+  "verification": {"status": "not_tested", "evidence_refs": [], "verification_scope": "Fixture only."},
+  "execution_authorized": false
+}

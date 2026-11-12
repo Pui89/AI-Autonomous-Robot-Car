@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1.0",
+  "state_id": "car-world-state-001",
+  "updated_at": "2026-11-13T00:00:00Z",
+  "evidence_refs": ["synthetic://car/observation-001"],
+  "entities": [{
+    "entity_id": "route-001",
+    "category": "route_condition",
+    "state": {"water_on_route": true},
+    "confidence": 0.5,
+    "evidence_refs": ["synthetic://car/observation-001"]
+  }],
+  "unknowns": ["Water depth and current are unknown."],
+  "conflicts": [],
+  "notes": "Synthetic fixture; not a real road assessment."
+}

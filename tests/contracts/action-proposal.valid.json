@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "proposal_id": "car-proposal-001",
+  "created_at": "2026-11-13T00:00:00Z",
+  "objective": "Present a route hazard advisory for human review.",
+  "world_state_ref": "car-world-state-001",
+  "actions": [{
+    "action_id": "avoid-water-covered-route",
+    "description": "Recommend avoiding the water-covered route.",
+    "risk_level": "high",
+    "preconditions": ["Human driver reviews available evidence."],
+    "expected_effect": "Inform human judgement only.",
+    "hazards": ["Water depth and current are unknown."],
+    "evidence_refs": ["synthetic://car/observation-001"]
+  }],
+  "authority": {"mode": "advisory_only", "human_approval_required": true, "execution_authorized": false},
+  "uncertainties": ["Synthetic fixture only."]
+}

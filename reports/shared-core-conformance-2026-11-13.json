@@ -1,0 +1,33 @@
+{
+  "report_version": "1.0.0",
+  "reproducibility": {
+    "commit_pin_source": "caller_declared_not_git_verified",
+    "core_commit_sha": "cb5fdecb12acf4d810522b6a1c86567996b99718",
+    "project_commit_sha": "47bcf06d4200bd1cba4e7fd49048e658b1b01810"
+  },
+  "result": {
+    "adapter_version": "0.1.0",
+    "checks": [
+      {"contract":"observation","fixture":"tests/contracts/observation.valid.json","kind":"positive","result":"passed"},
+      {"contract":"observation","fixture":"tests/contracts/observation.invalid.json","kind":"negative","result":"passed"},
+      {"contract":"world_state","fixture":"tests/contracts/world-state.valid.json","kind":"positive","result":"passed"},
+      {"contract":"world_state","fixture":"tests/contracts/world-state.invalid.json","kind":"negative","result":"passed"},
+      {"contract":"action_proposal","fixture":"tests/contracts/action-proposal.valid.json","kind":"positive","result":"passed"},
+      {"contract":"action_proposal","fixture":"tests/contracts/action-proposal.invalid.json","kind":"negative","result":"passed"},
+      {"contract":"failure_report","fixture":"tests/contracts/failure-report.valid.json","kind":"positive","result":"passed"},
+      {"contract":"failure_report","fixture":"tests/contracts/failure-report.invalid.json","kind":"negative","result":"passed"},
+      {"contract":"evidence_passport","fixture":"tests/contracts/evidence-passport.valid.json","kind":"positive","result":"passed"},
+      {"contract":"evidence_passport","fixture":"tests/contracts/evidence-passport.invalid.json","kind":"negative","result":"passed"}
+    ],
+    "core_contract_version": "0.1.0",
+    "errors": [],
+    "hardware_controlled": false,
+    "model_invoked": false,
+    "network_accessed": false,
+    "project_id": "pui89-ai-car",
+    "runtime_adapter_tested": false,
+    "scope": "schema-fixture-conformance-only",
+    "status": "passed"
+  },
+  "runner": {"name":"pui89-core-conformance-cli","version":"0.1.0"}
+}

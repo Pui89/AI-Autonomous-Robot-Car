@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1.0",
+  "observation_id": "car-sim-observation-001",
+  "observed_at": "2026-11-13T00:00:00Z",
+  "source": {"source_id": "synthetic-car-scenario", "source_type": "simulation"},
+  "modality": "other",
+  "payload": {"signal_name": "water_on_route", "value": true},
+  "quality": {"status": "usable", "notes": "Synthetic fixture only."},
+  "uncertainty": {"description": "No physical measurement.", "method": "not_assessed"},
+  "provenance": {"recorded_at": "2026-11-13T00:00:00Z", "dataset_or_file": "synthetic://car/observation-001", "license": "synthetic"}
+}
