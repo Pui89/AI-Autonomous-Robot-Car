@@ -4,10 +4,13 @@
 
 <table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/ai-robot-car.html"><img src="https://pui89.github.io/qr/ai-robot-car-en.png" width="160" alt="PUI89 AI Robot Car English website QR code"></a><br><a href="https://pui89.github.io/ai-robot-car.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/ai-robot-car-th.html"><img src="https://pui89.github.io/qr/ai-robot-car-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI Robot Car"></a><br><a href="https://pui89.github.io/ai-robot-car-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
 
-## PUI89 product maturity snapshot — 7 November 2026
+## PUI89 development maturity snapshot — 12 November 2026
 
 **Strategic direction: From AI Projects to AI Products.**  
-**Current maturity: Grade 2 — Early Engineering Foundation.** This repository contains research documentation and an initial software-only contract/safety prototype. It is not a functioning or road-tested vehicle.
+**Current maturity: Level 2 — Architecture Defined.** The product architecture and initial software-only contract/safety foundation are documented; vehicle integration and road performance are not established.
+
+
+**Shared platform evidence (separate from project validation):** the PUI89 Shared AI Core main-branch CI reported 187 dependency-free tests passed on 11 November 2026. This platform-level result does not establish this project's model accuracy, physical integration or field performance.
 
 | Area | Verified position |
 |---|---|
