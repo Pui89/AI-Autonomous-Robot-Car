@@ -8,11 +8,19 @@ Premium four-door hybrid utility SUV concept, four occupants, 450–520 kg occup
 
 ## Intelligence pipeline
 
-Synthetic or approved inputs -> validation -> canonical PUI89 Shared AI Core contracts -> state estimation -> hazard reasoning -> advisory safety gate -> human-facing advisory -> evidence record.
+Synthetic or approved inputs -> validation -> Shared AI Core Observation -> WorldState -> advisory reasoning -> ActionProposal -> human review -> Evidence Passport / FailureReport.
 
-## 24-module catalogue
+## Shared AI Core interface
 
-See [AI Car Module Catalogue](AI_CAR_MODULE_CATALOG.md) for the proposed module list and boundaries. See [Master Engineering Specification v2.0](MASTER_ENGINEERING_SPEC_V2.md) for product, chassis, hybrid, flood-resilience and validation requirements.
+The AI Car adapter in `pui89_car/shared_contract_adapter.py` maps the existing signal/advisory records to the canonical Shared AI Core v0.1.0 contract shapes. The project manifest and synthetic positive/negative fixtures are declared in `pui89-adapter.json`.
+
+- Observation preserves source, modality, timestamp, quality and provenance references.
+- WorldState carries evidence references, explicit unknowns and conflicts.
+- ActionProposal is advisory-only, requires human approval and always sets `execution_authorized: false`.
+- FailureReport records caller-supplied observed facts and response status.
+- Evidence Passport records missing evidence, uncertainty, safety-gate status, pending human review and verification status.
+
+The adapter is a serialization boundary. It does not independently verify source truth, calibration, sensor measurements or physical conditions. Central schema-fixture conformance has not yet been executed against pinned local repository checkouts; see [Shared AI Core Integration v0.1](SHARED_AI_CORE_INTEGRATION_V0.1.md).
 
 ## Initial implemented software baseline
 
@@ -26,9 +34,13 @@ See [AI Car Module Catalogue](AI_CAR_MODULE_CATALOG.md) for the proposed module 
 
 This is a software baseline, not a perception model, vehicle diagnostic integration, certified safety function or validated vehicle system.
 
+## 24-module catalogue
+
+See [AI Car Module Catalogue](AI_CAR_MODULE_CATALOG.md) for the proposed module list and boundaries. See [Master Engineering Specification v2.0](MASTER_ENGINEERING_SPEC_V2.md) for product, chassis, hybrid, flood-resilience and validation requirements.
+
 ## Architecture rules
 
-- Reuse the canonical shared PUI89 AI Core; do not fork it.
+- Reuse the canonical shared PUI89 AI Core; do not fork its contracts.
 - Preserve units, timestamps, provenance, uncertainty and calibration state.
 - Reject or flag invalid, stale, missing, contradictory or degraded critical inputs.
 - Human driver retains control and responsibility.
