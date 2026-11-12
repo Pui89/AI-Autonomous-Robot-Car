@@ -33,6 +33,52 @@ class SharedContractAdapterTests(unittest.TestCase):
         self.assertEqual(result["schema_version"], "0.1.0")
         self.assertEqual(result["source"]["source_type"], "simulation")
         self.assertEqual(result["provenance"]["dataset_or_file"], self.signal.evidence_ref)
+        self.assertEqual(result["quality"]["status"], "usable")
+
+    def test_observation_rejects_timezone_naive_timestamp(self):
+        invalid = VehicleSignal(
+            name="water_on_route", value=True, source="synthetic",
+            observed_at="2026-11-13T00:00:00", evidence_ref="synthetic://car/naive",
+        )
+        with self.assertRaisesRegex(ValueError, "timezone"):
+            signal_to_observation(
+                invalid, observation_id="obs-invalid", modality="other",
+                source_type="simulation", recorded_at=self.timestamp,
+            )
+
+    def test_observation_rejects_missing_provenance(self):
+        invalid = VehicleSignal(
+            name="water_on_route", value=True, source="",
+            observed_at=self.timestamp, evidence_ref="",
+        )
+        with self.assertRaisesRegex(ValueError, "source"):
+            signal_to_observation(
+                invalid, observation_id="obs-invalid", modality="other",
+                source_type="simulation", recorded_at=self.timestamp,
+            )
+
+    def test_observation_rejects_non_boolean_value(self):
+        invalid = VehicleSignal(
+            name="water_on_route", value="safe", source="synthetic",
+            observed_at=self.timestamp, evidence_ref="synthetic://car/invalid",
+        )
+        with self.assertRaisesRegex(ValueError, "boolean"):
+            signal_to_observation(
+                invalid, observation_id="obs-invalid", modality="other",
+                source_type="simulation", recorded_at=self.timestamp,
+            )
+
+    def test_degraded_quality_is_not_serialized_as_usable(self):
+        degraded = VehicleSignal(
+            name="water_on_route", value=True, source="synthetic",
+            observed_at=self.timestamp, evidence_ref="synthetic://car/degraded",
+            quality="degraded",
+        )
+        result = signal_to_observation(
+            degraded, observation_id="obs-degraded", modality="other",
+            source_type="simulation", recorded_at=self.timestamp,
+        )
+        self.assertEqual(result["quality"]["status"], "degraded")
 
     def test_unknown_signal_is_not_promoted_to_positive(self):
         unknown = VehicleAdvisory(
@@ -43,6 +89,16 @@ class SharedContractAdapterTests(unittest.TestCase):
         state = advisories_to_world_state((unknown,), state_id="state-1", updated_at=self.timestamp)
         self.assertEqual(len(state["unknowns"]), 1)
         self.assertEqual(state["evidence_refs"], [])
+
+    def test_conflicting_signal_remains_unknown_in_world_state(self):
+        conflict = VehicleAdvisory(
+            code="water_on_route_conflicting", priority="unknown",
+            message="Conflicting water signals.",
+            recommendation="Treat this condition as unknown.",
+        )
+        state = advisories_to_world_state((conflict,), state_id="state-conflict", updated_at=self.timestamp)
+        self.assertEqual(len(state["conflicts"]), 1)
+        self.assertEqual(len(state["unknowns"]), 1)
 
     def test_proposal_is_never_executable(self):
         result = advisory_to_action_proposal(
