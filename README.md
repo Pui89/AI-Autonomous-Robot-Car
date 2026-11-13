@@ -9,7 +9,9 @@ PUI89 AI Global SUV is a software-first vehicle-intelligence research concept fo
 | Dimension | Current direction | Evidence boundary |
 |---|---|---|
 | Official project name | **PUI89 AI Global SUV** | Confirmed project identity |
-| Vehicle class | Medium-size SUV, five-door | Design direction; no production vehicle selected |
+| Vehicle class | Medium-size, five-door SUV | Design direction; no production vehicle selected |
+| Seating | Five-seat target (2 front + 3 rear) | Packaging target; ergonomics and restraints not validated |
+| Engine study | 2.0L petrol full-HEV study hypothesis | Not selected; displacement, output and supplier remain open |
 | Initial powertrain study | **HEV-first** (full hybrid preferred for initial evaluation) | No supplier, drivetrain or vehicle platform selected |
 | AI architecture | PUI89 Shared AI Core | Software-first; advisory only |
 | Market intent | Global-market requirements and regional adaptation | No market homologation or regulatory compliance claimed |
