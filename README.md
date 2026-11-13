@@ -52,6 +52,24 @@ The intended AI role is **awareness and avoidance**, not proving that the vehicl
 
 These are design requirements and software research topics, not validated physical capabilities.
 
+## Perception & Task Intelligence (PTI)
+
+**Role in this product:** provide driver-centred road and vehicle-context awareness for the SUV concept. PTI is the shared PUI89 perception-and-task framework; the capabilities below are intended research and evaluation tasks, not production vehicle features.
+
+**Priority perception tasks**
+- Check camera visibility, image quality, sensor availability and observation freshness.
+- Detect and classify supported road users and scene elements, including vehicles, pedestrians, cyclists, road edges, lane markings and supported signs.
+- Track relevant road users and estimate relative motion or distance only when suitable calibrated inputs and evaluation evidence exist.
+- Interpret supported weather, visibility, road-surface and map context while preserving unknown or conflicting information.
+- Fuse authorised read-only sensor/vehicle observations with timestamps, units, provenance and uncertainty.
+- Generate explainable driver advisories for potentially hazardous or uncertain situations; abstain when evidence is insufficient.
+
+**Task flow:** OBSERVE → PERCEIVE → ASSESS → DECIDE → RESPOND → LEARN FROM EVIDENCE. The output is advisory information for a human driver. It is not a vehicle-control command.
+
+**First evidence gate:** permission-cleared road-scene datasets, defined classes and operating context, held-out evaluation, missed/false detection analysis, uncertainty and stale-data tests, alert-usability review, and measured resource use on the intended compute target.
+
+**Not established:** road-tested perception, production automotive capability, autonomous driving, collision prevention, automatic steering/throttle/braking, or validated flood-wading ability. The driver remains in control; no PTI actuation path is authorised. See the [shared PTI specification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/perception/PUI89_PERCEPTION_TASK_INTELLIGENCE_V1.0.md) (maintainer repository access required).
+
 ## PUI89 Shared AI Core
 
 Use the shared contracts and evidence boundaries:
