@@ -22,6 +22,49 @@ Full Hybrid (HEV) is the preferred first powertrain architecture to study. It of
 
 Keep the PUI89 AI Core independent of propulsion type. Versioned, read-only vehicle-context adapters may support petrol/ICE, HEV, PHEV and BEV information without creating separate AI stacks. Compare specific vehicles and markets using verified specifications, safety ratings, service access, warranty, lifecycle cost and independent evidence. Do not treat mild hybrid (MHEV) as equivalent to full hybrid (HEV).
 
+![PUI89 AI Global SUV Concept 01](assets/images/pui89-ai-global-suv-concept.svg)
+
+<sub>Illustrative SVG concept only — not a production design or validated vehicle.</sub>
+
+
+## PUI89 signature technology — proposed flagship scope
+
+PUI89 should be recognizable for **intelligent mobility in difficult conditions**, not for copying another automaker's styling or driver-assistance claims. The following ten named capabilities are a proposed product architecture. Names are working labels, not registered trademarks or validated products.
+
+| Signature capability | Intended responsibility | Initial evidence gate |
+|---|---|---|
+| **FloodGuard AI** | Combine verified flood reports, map context and vehicle observations; warn and recommend avoidance | Provenance, freshness, unknown-depth handling, false-alert and missed-hazard tests |
+| **OmniSense AI** | Fuse suitable camera, radar and optional sensor observations into a contextual scene | Dataset rights, sensor-quality checks, perception metrics and uncertainty tests |
+| **EdgeCore AI** | Run essential perception and advisory functions locally where supported | CPU/edge latency, memory, thermal and offline-fallback tests |
+| **PowerFlex AI** | Keep AI interfaces compatible with ICE, HEV, PHEV and BEV vehicle-context data | Versioned, read-only adapter contracts; no powertrain actuation |
+| **LifeGuard AI** | Surface supported vehicle-health, battery and thermal-risk observations | Signal provenance, missing-data handling and qualified hazard review |
+| **WeatherMind AI** | Interpret weather, visibility and road-condition risk | Reliable source timestamps, regional coverage and stale-data rejection |
+| **RoadMemory AI** | Maintain privacy-conscious, time-limited road-hazard context | Consent, data minimisation, retention and deletion controls |
+| **PredictiveCare AI** | Identify maintenance indicators from available diagnostic observations | Baseline comparison, precision/recall and human inspection workflow |
+| **SafeFallback AI** | Detect uncertainty, sensor faults and unsafe or unsupported outputs; abstain safely | Fault injection, degraded-mode and safe-hold tests |
+| **GlobalAdapt AI** | Adapt language, map, road-rule and regional context by market | Country-specific source review and regulatory assessment |
+
+### What the SUV concept involves
+
+- **Vehicle platform:** medium-size five-door SUV packaging, five-seat target, passenger/cargo ergonomics, visibility, crash structure and serviceability.
+- **Powertrain studies:** 2.0L full-HEV is an initial research hypothesis only; compare real platforms before selecting an engine. Keep PHEV and BEV compatibility as later adapter studies. FWD/AWD, battery size, power and fuel economy remain open engineering decisions.
+- **Perception hardware:** camera and radar are candidate modalities. LiDAR, thermal, ultrasonic, GNSS/IMU and vehicle diagnostics are optional research candidates subject to cost, provenance, packaging and safety review.
+- **Compute and networks:** evaluate CPU/GPU/NPU/MCU and memory budgets, secure boot, isolated interfaces, diagnostics and offline operation. No direct actuator or safety-critical control authority.
+- **Human interface:** clear risk levels, explanation, confidence/unknown state, accessible alerts and driver override; avoid distracting or overconfident warnings.
+- **Physical engineering:** suspension, braking, tyres, ground clearance, underbody protection, corrosion, ingress protection, thermal management and crashworthiness require qualified automotive engineering.
+- **Trust and governance:** cybersecurity, privacy, software-update integrity, dataset/model licensing, audit logs, regional regulations and independent validation.
+
+### Development roadmap — planning targets, not commitments
+
+1. **Foundation:** define requirements, interface contracts, hazard taxonomy, data provenance and reproducible CPU-first tests.
+2. **Software demonstrators:** implement FloodGuard, OmniSense baselines, EdgeCore runtime constraints and SafeFallback fault handling in simulation.
+3. **Sensor demonstrator:** integrate candidate sensors on a stationary bench or non-road prototype only after explicit approval and safety review.
+4. **Vehicle demonstrator:** conduct qualified integration, closed-course testing and environmental validation; keep the human driver in control.
+5. **Commercial feasibility:** assess suppliers, manufacturing, serviceability, cost, cybersecurity, homologation and market-by-market compliance.
+
+**Release boundary:** no claim of flood wading, fireproofing, autonomous driving, production readiness, crash performance, regulatory approval or manufacturing capability until supported by the relevant independent engineering evidence.
+
+
 ## Global-market engineering
 
 The concept should be assessed against regional differences rather than assuming one configuration fits every country:
