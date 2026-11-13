@@ -1,5 +1,9 @@
 # PUI89 AI Global SUV
 
+![PUI89 AI Global SUV concept artwork — medium-size five-door SUV with advisory-only AI awareness overlays](assets/images/pui89-ai-global-suv-concept.svg)
+
+*Concept artwork only. It is not production CAD, a selected vehicle platform, a functioning prototype, or proof of flood, fire, crash, or autonomous-driving capability.*
+
 **Intelligent mobility. Global-market thinking. Evidence-led safety.**
 
 PUI89 AI Global SUV is a software-first vehicle-intelligence research concept for a **medium-size, five-door SUV**. The design direction prioritizes practical passenger and cargo space, all-weather usability, global-market adaptability and risk-aware driver support. It is not a small city car.
