@@ -1,122 +1,111 @@
-# Project Plan — PUI89 Compact Smart Car
+# Project Plan — PUI89 AI Global SUV
 
 ## Product definition
 
-A future AI-enabled car assistance and robotics research platform. Begin with software, synthetic data, and simulation. This repository is not a functioning vehicle, autonomous-driving system, or road-certified product.
+A software-first vehicle-intelligence research concept for a medium-size, five-door SUV intended to inform global-market requirements. Priorities are practical passenger and cargo utility, all-weather awareness, flood-risk avoidance and human-driver support. This repository is not a functioning vehicle, autonomous-driving system or road-certified product.
 
-## Compact Smart Car powertrain strategy (2026–2027)
+## Vehicle and powertrain strategy
 
-**Preferred initial study: compact full hybrid (HEV).** This is a design direction only; no vehicle, drivetrain, supplier, fuel-economy result or road validation is claimed.
+**Vehicle class:** medium-size SUV. The project is no longer a compact/small city-car concept.
 
-1. Start with a compact, human-driver-first vehicle concept and evaluate full HEV as the preferred first powertrain.
-2. Keep the PUI89 AI Core propulsion-neutral so it can support petrol-only, HEV, PHEV and BEV vehicles.
-3. Use versioned, read-only vehicle-context adapters. Powertrain telemetry must not create a separate AI stack or grant physical authority.
-4. Prefer full HEV over mild hybrid when meaningful electric-motor assistance is a requirement, but make any final selection using specific vehicle specifications, local serviceability, lifecycle cost and independent evidence.
-5. Do not require external charging for the initial HEV concept. PHEV/BEV support remains an architectural compatibility goal, not a committed product variant.
+**Powertrain priority: HEV-first.** Full Hybrid (HEV) is the preferred first architecture to evaluate, subject to vehicle-specific, market-specific and engineering evidence. No supplier, production platform or final drivetrain has been selected.
+
+1. Study full HEV first; use petrol/ICE as a benchmark and preserve PHEV/BEV compatibility.
+2. Keep the PUI89 AI Core propulsion-neutral through versioned, read-only vehicle-context adapters.
+3. Keep powertrain telemetry in adapters; do not create separate AI stacks for ICE, HEV, PHEV and BEV.
+4. Distinguish full HEV from mild hybrid (MHEV); compare actual architecture, verified specifications, serviceability and lifecycle cost.
+5. Do not claim fuel economy, emissions, performance, reliability or cost advantages without comparable independent evidence.
 
 **Safety boundary:** no ECU/CAN connection, steering, throttle, braking, propulsion, battery-management or charging control. AI outputs remain advisory and the human driver retains control.
 
-**Next gate:** define a vendor-neutral vehicle-context schema and synthetic conformance fixtures for engine, motor, battery, fuel, energy-flow and fault-status observations. Validate units, timestamps, provenance, freshness, uncertainty and missing/conflicting data before considering any real vehicle interface.
+## Global-market requirements
 
-## Fire and flood resilience — safety requirements
+Evaluate regional configurations independently. The global direction should consider:
 
-PUI89 should design for **early hazard awareness, avoidance, occupant protection and safe emergency response**. Do not describe the vehicle as fireproof, floodproof, amphibious or safe to drive through floodwater. These are proposed requirements; no physical protection, detection accuracy or certification is currently demonstrated.
+- Climate, heat, humidity, dust, rainfall, road quality and flood exposure.
+- Local homologation, crashworthiness, occupant protection and vehicle safety regulations.
+- Fuel availability and quality, charging infrastructure and energy prices.
+- Service network coverage, parts availability, warranty and lifecycle ownership cost.
+- Passenger ergonomics, accessibility, child-seat compatibility and useful cargo packaging.
+- Cybersecurity, privacy, connected-vehicle rules and data-residency requirements.
 
-### Flood risk
-- Use available weather, road and water-depth information to warn about flood-prone routes and advise the driver to avoid flooded roads. If depth, current, road condition or route passability is unknown, show **unknown — do not enter**, not a guessed safe depth.
-- Do not promise a universal safe wading depth. Actual limits depend on the exact vehicle, intake, electrical components, battery location, sealing, water flow and manufacturer guidance.
-- If water rises around the vehicle, prioritize stopping only where safe, evacuation to higher ground when possible, and emergency services. Never instruct occupants to drive through moving or rising water.
-- After suspected water ingress or submersion, do not restart or charge the vehicle; arrange qualified inspection and recovery. Treat hybrid high-voltage components as hazardous.
-- Any future water-ingress protection target must be defined by component, exposure, duration, water conditions and a recognized test method; publish results only after independent testing.
+A global-market design intent is not evidence of approval in any country. No homologation, certification, launch or supplier agreement is claimed.
 
-### Fire and thermal-event risk
-- Monitor only documented, supported signals for abnormal temperature, smoke/fire alerts, battery or electrical fault indications. Mark unavailable signals clearly; do not imply AI can detect every fire.
-- Provide clear warnings and an emergency stop/evacuation advisory. If fire, smoke or a thermal event is suspected, occupants should leave the vehicle, move away, avoid opening a hot battery compartment or touching high-voltage parts, and call emergency services.
-- Do not tell occupants to fight a vehicle or traction-battery fire. Follow emergency-service and vehicle-manufacturer guidance.
-- Require professionally engineered separation, protection, venting/pressure management and thermal-event propagation assessment for any future battery or fuel-system design. No fire-containment performance is claimed.
-- HEV adds both fuel-system and high-voltage hazards; safety cases must cover petrol leaks, electrical isolation, battery thermal events and post-crash response.
+## Flood-risk awareness and avoidance
 
-### AI and verification boundary
-- AI is advisory only: no automatic steering, throttle, braking, propulsion, high-voltage isolation, battery-management or fire-suppression actuation.
-- Unknown, stale, conflicting or failed sensor inputs must trigger an explicit uncertainty warning and conservative advice.
-- Next software gate: create synthetic scenarios for rising water, unknown depth, fast-moving water, sensor loss, smoke/temperature alerts, battery faults, post-crash states and false alarms. Synthetic tests verify logic only, not physical protection.
-- Physical validation requires qualified automotive/fire-safety engineering, controlled laboratory testing, applicable regulations and independent certification before any resilience claim.
+The AI role is early awareness, risk explanation and route avoidance—not flood wading.
 
-## Intended capability areas
+- Use only documented road, weather, flood and water-level inputs with provenance and timestamps.
+- Warn about known or likely flood exposure and recommend an alternate route where evidence supports it.
+- If depth, current, road condition or passability is unknown, state **“unknown — do not enter”**; never invent a safe depth.
+- Never advise driving through moving or rising water.
+- If water ingress or submersion is suspected, advise occupants not to restart or charge the vehicle and to arrange qualified inspection and recovery.
+- Physical sealing, water-ingress resistance and any wading limit require vehicle-specific engineering and independent testing. No such capability is currently demonstrated.
 
-- Environmental perception and hazard awareness.
-- Driver-assistance concepts with clear, prioritized human-facing warnings.
-- Vehicle-health monitoring models for battery, electrical, thermal, and component anomalies.
-- Road/weather/visibility context when supported by lawful, documented data.
-- Predictive maintenance with evidence and uncertainty.
-- Human-supervised decision support; no direct vehicle-control authority in the initial scope.
+## Fire and thermal-event awareness
+
+- Surface abnormal temperature, smoke/fire alerts or battery/electrical fault information only when supported by documented signals.
+- Clearly mark unavailable, stale or conflicting signals; do not imply complete fire detection.
+- For suspected fire or smoke, prioritize occupant evacuation, moving away from the vehicle and contacting emergency services.
+- Do not instruct occupants to fight a vehicle or traction-battery fire or touch high-voltage components.
+- Any future battery thermal propagation, fire containment, venting or post-crash protection claim requires qualified engineering and controlled independent testing.
 
 ## Shared PUI89 AI Core
 
-Reuse canonical PUI89 components and contracts; do not fork or duplicate shared infrastructure.
+Reuse canonical PUI89 components and contracts:
 
-- `Observation`: source, timestamp, value, quality, confidence, provenance.
-- `WorldState`: modeled state, freshness, uncertainty, and limitations.
-- `ActionProposal`: advisory proposal, rationale, evidence, and authority boundary.
-- `FailureReport`: failure mode, severity, evidence, containment, and recovery recommendation.
+- `Observation`: source, modality, timestamp, quality, confidence and provenance.
+- `WorldState`: modeled state, freshness, uncertainty and limitations.
+- `ActionProposal`: advisory proposal, rationale, evidence and authority boundary.
+- `FailureReport`: failure mode, severity, evidence, containment and recovery recommendation.
 
-Cross-cutting requirements: evidence integrity, uncertainty propagation, calibration records, missing/noisy/stale/conflicting input handling, safety gates, human override, reproducible benchmarks, and clear implemented/simulated/proposed/validated labels.
+Cross-cutting requirements: evidence integrity, uncertainty propagation, calibration records, missing/noisy/stale/conflicting input handling, safety gates, human override, reproducible benchmarks and clear implemented/simulated/proposed/validated labels.
 
 ## Initial software architecture
 
 1. Synthetic input and scenario adapters.
-2. Schema, range, timestamp, freshness, and provenance validation.
+2. Schema, range, timestamp, freshness and provenance validation.
 3. Transparent baseline state estimation.
-4. Explainable hazard reasoning.
+4. Explainable road, weather, flood and vehicle-health reasoning.
 5. Safety supervisor that blocks unsupported proposals.
 6. Human-facing advisory output.
-7. Scenario replay, metrics, regression, and evidence reporting.
+7. Scenario replay, metrics, regression and evidence reporting.
 
-No physical vehicle, CAN bus, ECU, steering, throttle, brake, or propulsion connection is permitted in the initial phase.
-
-## Safety and security principles
-
-- Human driver retains control and responsibility.
-- No direct actuation path from an AI model.
-- Unknown, stale, invalid, or conflicting observations remain explicitly unknown or conflicting.
-- Every warning must preserve rationale and supporting evidence.
-- Confidence scores are not proof of correctness.
-- Threat model software inputs, dependencies, credentials, unauthorized changes, and update integrity.
-- Battery, electrical, thermal, fire, crashworthiness, and water-ingress requirements need qualified physical engineering and independent testing; software cannot establish resistance or certification.
-- Never claim autonomous capability, collision prevention, roadworthiness, an IP rating, or regulatory compliance without suitable evidence.
+No physical vehicle, CAN bus, ECU, steering, throttle, brake or propulsion connection is permitted in the initial phase.
 
 ## Strict zero-cost policy
 
-Default to Git, Python standard library, synthetic fixtures, and GitHub features already available at no charge. Do not use paid APIs, subscriptions, cloud GPUs, paid datasets, or metered services. Before adding any package, model, dataset, or tool, check its license, provenance, hardware requirements, privacy terms, and potential billing triggers. Prefer no additional dependencies.
+Default to Git, Python standard library, synthetic fixtures and GitHub features already available at no charge. Do not use paid APIs, subscriptions, cloud GPUs, paid datasets or metered services. Review licences, provenance, security, hardware requirements and billing triggers before adopting packages, models, datasets or tools. No automatic large downloads or installations.
 
 ## Roadmap
 
 ### Phase 0 — foundation
-- [x] Establish project scope and safety boundaries.
+- [x] Establish software-first scope and human-control safety boundaries.
 - [x] Document architecture and staged development.
 - [ ] Align interface versions with canonical PUI89 AI Core.
 
-### Phase 1 — software contracts
-- [ ] Define typed observation, world-state, proposal, and failure-report schemas.
+### Phase 1 — requirements and contracts
+- [ ] Define medium-size SUV user, packaging, passenger and cargo requirements.
+- [ ] Define global-market requirement matrix and target-market assumptions.
+- [ ] Define typed Observation, WorldState, ActionProposal and FailureReport schemas.
 - [ ] Add deterministic validation and safety-gate tests.
-- [ ] Test stale, missing, malformed, and conflicting inputs.
 
-### Phase 2 — simulation and evaluation
-- [ ] Build synthetic driving scenarios without real-road deployment.
-- [ ] Add repeatable hazard scenario replay.
-- [ ] Measure missed events, false alarms, latency, and uncertainty behavior.
-- [ ] Preserve benchmark configuration and evidence artifacts.
+### Phase 2 — synthetic scenarios and evaluation
+- [ ] Build scenarios for flood-prone routes, unknown water depth, moving water and route diversion.
+- [ ] Add smoke, thermal-event, battery-fault and post-crash advisory scenarios.
+- [ ] Test sensor dropout, stale data, conflicting sources and false alarms.
+- [ ] Measure missed events, false alerts, latency, uncertainty and reproducibility.
 
-### Phase 3 — research prototypes
+### Phase 3 — engineering studies
+- [ ] Compare HEV architectures against ICE, PHEV and BEV using verified evidence.
+- [ ] Study chassis, occupant packaging, cargo utility and regional requirements.
 - [ ] Evaluate perception methods only with legally usable, documented datasets.
-- [ ] Compare against transparent baselines.
-- [ ] Publish limitations and failure analysis.
 
 ### Phase 4 — independent review
-- [ ] Qualified automotive, electrical, battery, cybersecurity, and functional-safety review.
+- [ ] Qualified automotive, hybrid-powertrain, battery, fire-safety and cybersecurity review.
 - [ ] Legal and regulatory review for intended markets.
 - [ ] Controlled validation before any hardware integration.
 
 ## Definition of done
 
-A feature requires requirements, tests, traceable evidence, known limitations, security review, and documented failure behavior. Hardware and road-safety claims require appropriate independent validation.
+A feature requires requirements, tests, traceable evidence, known limitations, security review and documented failure behaviour. Hardware, flood protection, fire resistance and road-safety claims require appropriate independent validation.
