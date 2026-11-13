@@ -10,7 +10,7 @@ The project is named **PUI89 Compact Smart EV**. The intended form is a practica
 
 ## Verified repository additions in this branch
 
-- `docs/MASTER_ENGINEERING_SPEC_V2.md`: hybrid SUV product direction, four seats, 450–520 kg occupant-inclusive payload target, flood-resilient design intent, global-market engineering gates and unresolved decisions.
+- `docs/MASTER_ENGINEERING_SPEC_V2.md`: compact EV product direction, four-wheel crossover/mini-SUV form and unresolved engineering decisions; previous hybrid/SUV, seat-count and payload targets are superseded and are not approved specifications.
 - `docs/AI_CAR_MODULE_CATALOG.md`: 24 proposed AI/vehicle-intelligence modules with inputs, advisory outputs and failure cases.
 - `docs/GITHUB_IMPLEMENTATION_BACKLOG_V2.md`: prioritised engineering and software backlog.
 - `pui89_car/intelligence.py`: deterministic, dependency-free signal-to-advisory baseline. It preserves unknown, stale, conflicting and low-quality signal states; water-on-route advisories recommend avoidance; outputs remain advisory-only.
