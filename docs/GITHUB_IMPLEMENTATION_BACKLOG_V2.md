@@ -1,4 +1,4 @@
-# PUI89 AI Car — GitHub Implementation Backlog v2
+# PUI89 Compact Smart EV — GitHub Implementation Backlog v2
 
 **Status:** Proposed backlog. Issues have not been created automatically.  
 **Working mode:** Software-first, CPU-only, open-source-first, no-cost by default.  
@@ -10,7 +10,7 @@
 |---|---|---|---|
 | CAR-001 | Publish master engineering specification | P0 | Product direction, assumptions, unresolved decisions and validation boundary documented |
 | CAR-002 | Define chassis/payload engineering checklist | P0 | Occupant-inclusive payload, GVWR, GAWR, curb mass, tires, brakes, suspension and CG gates listed |
-| CAR-003 | Create hybrid architecture trade study | P0 | HEV/PHEV/series hybrid compared without premature selection |
+| CAR-003 | Create compact EV platform and powertrain architecture study | P0 | Battery, motor, inverter, charging and platform options compared without premature selection |
 | CAR-004 | Define flood-resilient design requirements | P0 | Component exposure map, inspection procedure and no-unverified-wading rule |
 | CAR-005 | Create global compliance applicability matrix | P1 | Jurisdiction-specific applicability review plan; no blanket compliance claim |
 | CAR-006 | Create inclusive cabin and cargo requirements | P1 | Ergonomics, accessibility, occupant protection and cargo restraint criteria |
@@ -39,7 +39,7 @@
 | CAR-019 | Collision-risk advisory interface | P1 | Evidence-linked advisory only; no braking command |
 | CAR-020 | Battery and thermal diagnostic interfaces | P1 | BMS/temperature signal quality and anomaly state preserved |
 | CAR-021 | Tire intelligence interface | P1 | Pressure/temperature anomaly input validated |
-| CAR-022 | Whole-vehicle health summary | P1 | Engine, transmission, brake, electrical and hybrid signals separated |
+| CAR-022 | Whole-vehicle health summary | P1 | Battery, motor, inverter, brake and electrical signals separated |
 | CAR-023 | Predictive maintenance evidence model | P2 | Requires longitudinal evidence; no unsupported prediction |
 | CAR-024 | Emergency and post-crash event interface | P2 | Event triage, human confirmation and connectivity failure represented |
 | CAR-025 | Navigation and Road Memory interfaces | P2 | Source freshness, privacy and location provenance documented |
