@@ -65,12 +65,12 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 
 | Area | Verified position |
 |---|---|
-| Product definition | Human-driver-first AI vehicle intelligence concept with EasyRide priorities for safety, comfort, inclusive usability and practical cargo storage. |
+| Product definition | Human-driver-first AI vehicle intelligence concept with compact-EV priorities for safety, comfort, inclusive usability and practical cargo storage. |
 | Software and AI | Initial contracts/safety logic, tests and opt-in Hugging Face adapter code are documented. Model inference and vehicle-specific accuracy are not yet tested; local contract types still require alignment with the canonical shared PUI89 AI Core. |
 | Simulation | Simulation-first research direction; no validated road, vehicle-dynamics or autonomous-driving performance is established. |
 | Physical product | No functioning car, verified sensor layout, production CAD/BOM, vehicle integration, roadworthiness or certified safety system is claimed. |
 
-**Next product gate:** align the software contracts with the shared AI Core; define driver-assistance use cases, hazards, data quality and human-control boundaries; build deterministic synthetic scenarios and reproducible evaluations. In parallel, convert EasyRide comfort, accessibility and cargo goals into measurable user and packaging requirements.
+**Next product gate:** align the software contracts with the shared AI Core; define driver-assistance use cases, hazards, data quality and human-control boundaries; build deterministic synthetic scenarios and reproducible evaluations. In parallel, convert compact-EV comfort, accessibility and cargo goals into measurable user and packaging requirements.
 
 **Product discipline:** AI remains advisory; the human driver retains control. No autonomous-driving, road-safety, waterproofing, fire-resistance or production-readiness claims are made. No paid API, cloud GPU, automatic model download or physical vehicle actuation is part of this update.
 
