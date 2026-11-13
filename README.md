@@ -1,4 +1,4 @@
-# PUI89 AI Robot Car
+# PUI89 Compact Hybrid Smart Vehicle
 
 
 ## Public privacy boundary
@@ -31,8 +31,8 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 
 > **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
 > 
-> **Project:** PUI89 AI Robot Car  
-> **Focus:** Human-driver-first intelligent mobility and vehicle-intelligence research concept  
+> **Project:** PUI89 Compact Hybrid Smart Vehicle  
+> **Focus:** Compact, human-driver-first hybrid-electric smart mobility and vehicle-intelligence research concept  
 > **Development stage:** Early software scaffold and design requirements; no functioning vehicle, road test or certification is established.
 > 
 > **Project website:** [English](https://pui89.github.io/ai-robot-car.html) · [ภาษาไทย](https://pui89.github.io/ai-robot-car-th.html) · [PUI89 portfolio](https://pui89.github.io/)
@@ -76,7 +76,7 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 
 
 
-![PUI89 AI Car — Vehicle Intelligence Concept](docs/images/pui89-ai-car-concept.svg)
+![PUI89 Compact Hybrid Smart Vehicle — Design Concept](docs/images/pui89-ai-car-concept.svg)
 
 **Repository:** `Pui89/ai-robot-car`  
 **Project type:** Advanced AI-enabled vehicle intelligence and robotics research; software-first, simulation-first.  
@@ -84,9 +84,15 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 
 ## Design concept
 
-The concept uses a premium electric crossover form in PUI89 deep navy and electric cyan. The illustrative sensor layout communicates a future perception envelope (camera, radar, lidar and proximity sensing), while the software architecture remains human-driver-first: AI produces evidence-linked advisories, not steering, throttle or braking commands.
+### Compact hybrid smart-vehicle design direction
 
-**The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, built prototype, or performance claim.** Sensor selection and physical packaging remain future engineering work.
+The vehicle direction is now a **compact hybrid-electric smart vehicle** rather than a large premium crossover. The preferred package is a city-friendly five-door compact hatchback / small crossover: short overall footprint, upright cabin, practical passenger access, useful rear cargo area, clear outward visibility and efficient urban manoeuvrability. The exterior uses PUI89 Deep Navy, Electric Cyan and Titanium Silver detailing with a restrained, premium technology identity.
+
+**Hybrid is a proposed powertrain direction, not a selected or validated engineering architecture.** HEV, PHEV or another hybrid configuration remains open until packaging, cost, energy use, serviceability, local regulations and safety requirements are assessed. No battery size, range, fuel economy, emissions, performance or charging claim is made.
+
+The shared PUI89 Smart Mobility AI Core supports driver-facing hazard awareness, road/weather context, route and flood-risk warnings, vehicle-health insights, maintenance alerts and emergency assistance. AI remains advisory: the human driver retains steering, throttle and braking authority. No autonomous actuation is enabled or claimed.
+
+**The artwork is a design visualization, not production CAD, a bill of materials, a verified sensor layout, a built prototype, or a performance claim.** Vehicle dimensions, hybrid architecture, sensor selection and physical packaging remain future engineering work.
 
 ## EasyRide: inclusive, comfortable and practical mobility
 
@@ -99,7 +105,7 @@ PUI89 AI Car adopts **EasyRide** as a human-centred design direction: make every
 - **Inclusive usability:** evaluate adjustable seating and steering reach, easy-to-read displays, simple interaction, helpful voice/interface options and accessible entry/exit. Avoid assuming that one body type, age group or level of driving experience represents everyone.
 - **Human control and fallback:** the driver remains responsible for driving. Assistance must communicate uncertainty, allow the driver to ignore or dismiss non-critical suggestions, and fail safely when information is missing or unreliable.
 
-The goal is a vehicle concept that is **safe by design, comfortable to use, practical to carry everyday and larger items, and genuinely helpful across different users**. These goals require user research, ergonomic assessment, hazard analysis, simulation and qualified vehicle testing before any real-world safety or accessibility claim can be made.
+The goal is a compact hybrid-electric vehicle concept that is **easy to enter, comfortable to use, practical for everyday passengers and cargo, and supported by clear driver-facing intelligence**. These goals require user research, ergonomic assessment, hazard analysis, simulation and qualified vehicle testing before any real-world safety or accessibility claim can be made.
 
 ## Mission
 
@@ -272,7 +278,7 @@ See [the project-specific spatial integration profile](docs/spatial-intelligence
 <!-- PUI89_EVIDENCE_BACKED_REVIEW:START -->
 ## Evidence-backed project review status
 
-**Project:** PUI89 AI Robot Car  
+**Project:** PUI89 Compact Hybrid Smart Vehicle  
 **README snapshot (13 November 2026): 0 completed evidence-backed reviews.** This snapshot is not auto-synchronised; the live [PUI89 portfolio review register](https://pui89.github.io/#evidence-backed-project-reviews) is the source of truth.
 
 This is a review-record count, not a statement that development or testing has not occurred. Engineering work, CI runs, test results and simulation evidence may support a review, but do not automatically count as a completed review.
