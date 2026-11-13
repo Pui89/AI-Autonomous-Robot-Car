@@ -1,8 +1,12 @@
-# Implementation Status — PUI89 AI Car
+# Implementation Status — PUI89 Compact Smart EV
 
 Last updated: 2026-11-13  
 Repository: Pui89/AI-Autonomous-Robot-Car  
 Overall status: early-stage software and research foundation; engineering v2 and initial Shared AI Core adapter added on a feature branch.
+
+## Approved product identity and design direction
+
+The project is named **PUI89 Compact Smart EV**. The intended form is a practical four-wheel compact electric crossover / mini-SUV concept. This is a product-design direction only; no vehicle dimensions, seating, payload, powertrain, range, physical integration, road test or certification is established. Battery and motor architecture remain open. The existing repository name and stable project identifiers are retained to avoid breaking links and evidence history.
 
 ## Verified repository additions in this branch
 
