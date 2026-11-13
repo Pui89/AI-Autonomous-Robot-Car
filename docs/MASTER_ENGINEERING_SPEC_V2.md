@@ -49,7 +49,7 @@ The product direction is EV-oriented, but no battery chemistry/capacity, motor, 
 
 ### 3.2 Payload and vehicle dynamics
 
-- Treat 450–520 kg as a target for engineering study only.
+- Do not adopt the previously explored 450–520 kg figure; no payload target is approved.
 - Define occupant, luggage, accessory, roof-load and towing assumptions separately.
 - Calculate GVWR and axle loads from a defined curb-mass configuration.
 - Validate tire load/speed ratings, wheel, suspension, chassis, brakes, thermal loads, stability and center of gravity.
