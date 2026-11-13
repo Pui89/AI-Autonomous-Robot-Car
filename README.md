@@ -42,7 +42,7 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 ## Development stage
 
 **Stage:** Stage 2 of 5 — Early software foundation and hazard-awareness requirements
-**ขั้นการพัฒนา:** Early software foundation
+**ระยะการพัฒนา:** พื้นฐานซอฟต์แวร์ระยะแรกและข้อกำหนดการรับรู้ความเสี่ยง
 
 **Shared framework:** [PUI89 Development Stage Standard](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_DEVELOPMENT_STAGE_STANDARD.md)
 
