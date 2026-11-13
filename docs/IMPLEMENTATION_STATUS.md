@@ -32,7 +32,7 @@ Project mission, safety case, security policy, open-source-first technology poli
 - Perception models or vehicle-specific model accuracy.
 - Approved vehicle datasets and real sensor integration.
 - CARLA/SUMO/Gazebo or vehicle-dynamics simulation integration.
-- HEV/PHEV/series-hybrid trade study and powertrain selection.
+- compact EV platform, battery, motor and inverter architecture trade study.
 - Chassis design, curb mass, GVWR/GAWR, payload calculations or physical validation.
 - Flood ingress/wading tests, crash tests, brake tests or thermal tests.
 - Predictive model validated on longitudinal vehicle data.
@@ -44,7 +44,7 @@ Project mission, safety case, security policy, open-source-first technology poli
 1. Run the central Shared AI Core conformance CLI against exact, independently verified repository commits; retain its report.
 2. Expand runtime adapter tests for malformed input, timestamps, conflicting signals and unknown states.
 3. Add reproducible benchmark outputs and CPU/RAM measurements without paid services or unapproved downloads.
-4. Conduct qualified chassis, hybrid powertrain, flood-resilience and market-compliance studies before any hardware work.
+4. Conduct qualified compact-EV platform, battery/motor/inverter, flood-resilience and market-compliance studies before any hardware work.
 5. Review and merge the engineering and integration changes only after human review.
 
 ## Status vocabulary
