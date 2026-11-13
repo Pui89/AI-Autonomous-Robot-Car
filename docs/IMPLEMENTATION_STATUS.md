@@ -1,12 +1,16 @@
-# Implementation Status — PUI89 AI Car
+# Implementation Status — PUI89 Compact Smart EV
 
 Last updated: 2026-11-13  
 Repository: Pui89/AI-Autonomous-Robot-Car  
 Overall status: early-stage software and research foundation; engineering v2 and initial Shared AI Core adapter added on a feature branch.
 
+## Approved product identity and design direction
+
+The project is named **PUI89 Compact Smart EV**. The intended form is a practical four-wheel compact electric crossover / mini-SUV concept. This is a product-design direction only; no vehicle dimensions, seating, payload, powertrain, range, physical integration, road test or certification is established. Battery and motor architecture remain open. The existing repository name and stable project identifiers are retained to avoid breaking links and evidence history.
+
 ## Verified repository additions in this branch
 
-- `docs/MASTER_ENGINEERING_SPEC_V2.md`: hybrid SUV product direction, four seats, 450–520 kg occupant-inclusive payload target, flood-resilient design intent, global-market engineering gates and unresolved decisions.
+- `docs/MASTER_ENGINEERING_SPEC_V2.md`: compact EV product direction, four-wheel crossover/mini-SUV form and unresolved engineering decisions; previous hybrid/SUV, seat-count and payload targets are superseded and are not approved specifications.
 - `docs/AI_CAR_MODULE_CATALOG.md`: 24 proposed AI/vehicle-intelligence modules with inputs, advisory outputs and failure cases.
 - `docs/GITHUB_IMPLEMENTATION_BACKLOG_V2.md`: prioritised engineering and software backlog.
 - `pui89_car/intelligence.py`: deterministic, dependency-free signal-to-advisory baseline. It preserves unknown, stale, conflicting and low-quality signal states; water-on-route advisories recommend avoidance; outputs remain advisory-only.
@@ -28,7 +32,7 @@ Project mission, safety case, security policy, open-source-first technology poli
 - Perception models or vehicle-specific model accuracy.
 - Approved vehicle datasets and real sensor integration.
 - CARLA/SUMO/Gazebo or vehicle-dynamics simulation integration.
-- HEV/PHEV/series-hybrid trade study and powertrain selection.
+- compact EV platform, battery, motor and inverter architecture trade study.
 - Chassis design, curb mass, GVWR/GAWR, payload calculations or physical validation.
 - Flood ingress/wading tests, crash tests, brake tests or thermal tests.
 - Predictive model validated on longitudinal vehicle data.
@@ -40,7 +44,7 @@ Project mission, safety case, security policy, open-source-first technology poli
 1. Run the central Shared AI Core conformance CLI against exact, independently verified repository commits; retain its report.
 2. Expand runtime adapter tests for malformed input, timestamps, conflicting signals and unknown states.
 3. Add reproducible benchmark outputs and CPU/RAM measurements without paid services or unapproved downloads.
-4. Conduct qualified chassis, hybrid powertrain, flood-resilience and market-compliance studies before any hardware work.
+4. Conduct qualified compact-EV platform, battery/motor/inverter, flood-resilience and market-compliance studies before any hardware work.
 5. Review and merge the engineering and integration changes only after human review.
 
 ## Status vocabulary

@@ -1,4 +1,4 @@
-# PUI89 AI Car — 24-Module Intelligence Catalogue
+# PUI89 Compact Smart EV — 24-Module Intelligence Catalogue
 
 **Status:** Proposed module catalogue and implementation roadmap.  
 **Authority:** Advisory-only; human driver retains control.  
@@ -23,7 +23,7 @@
 | AI-CAR-13 | 360° Surround Awareness | Surround cameras/radar/ultrasonic where available | Blind-zone/parking awareness | Occlusion, sensor obstruction |
 | AI-CAR-14 | Driver Monitoring | In-cabin observations with consent | Fatigue/distraction prompt | Privacy issue, false inference |
 | AI-CAR-15 | Tire Intelligence | TPMS and validated wheel data | Pressure/temperature/anomaly warning | Missing or uncalibrated readings |
-| AI-CAR-16 | Vehicle Health Intelligence | Validated engine, transmission, brake, electrical and hybrid diagnostics | Whole-vehicle health summary | Incomplete diagnostic coverage |
+| AI-CAR-16 | Vehicle Health Intelligence | Validated battery, motor, inverter, brake and electrical diagnostics | Whole-vehicle health summary | Incomplete diagnostic coverage |
 | AI-CAR-17 | Fault Diagnosis & Recovery | Failure reports, DTCs, health state | Fault isolation and service guidance | Ambiguous cause, cascading fault |
 | AI-CAR-18 | Payload Intelligence | Validated load sensors or declared load data | Load distribution/overload advisory | Unmeasured cargo, sensor error |
 | AI-CAR-19 | Cybersecurity Monitoring | Approved security and integrity events | Security alert and evidence record | False positives, missing logs |

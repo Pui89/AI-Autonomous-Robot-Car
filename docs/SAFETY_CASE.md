@@ -1,4 +1,4 @@
-# Initial Safety Case — PUI89 AI Robot Car
+# Initial Safety Case — PUI89 Compact Smart EV
 
 **Status:** Preliminary design record only. Not a certification, safety approval, or proof of vehicle safety.
 

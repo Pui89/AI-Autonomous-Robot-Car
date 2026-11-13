@@ -1,4 +1,4 @@
-# PUI89 AI Robot Car
+# PUI89 Compact Smart EV
 
 
 ## Public privacy boundary
@@ -31,7 +31,7 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 
 > **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
 > 
-> **Project:** PUI89 AI Robot Car  
+> **Project:** PUI89 Compact Smart EV  
 > **Focus:** Human-driver-first intelligent mobility and vehicle-intelligence research concept  
 > **Development stage:** Early software scaffold and design requirements; no functioning vehicle, road test or certification is established.
 > 
@@ -53,7 +53,7 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 
 ## Project website QR codes
 
-<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/ai-robot-car.html"><img src="https://pui89.github.io/qr/ai-robot-car-en.png" width="160" alt="PUI89 AI Robot Car English website QR code"></a><br><a href="https://pui89.github.io/ai-robot-car.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/ai-robot-car-th.html"><img src="https://pui89.github.io/qr/ai-robot-car-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI Robot Car"></a><br><a href="https://pui89.github.io/ai-robot-car-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
+<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/ai-robot-car.html"><img src="https://pui89.github.io/qr/ai-robot-car-en.png" width="160" alt="PUI89 Compact Smart EV English website QR code"></a><br><a href="https://pui89.github.io/ai-robot-car.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/ai-robot-car-th.html"><img src="https://pui89.github.io/qr/ai-robot-car-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 Compact Smart EV"></a><br><a href="https://pui89.github.io/ai-robot-car-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
 
 ## PUI89 development maturity snapshot — 12 November 2026
 
@@ -65,32 +65,40 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 
 | Area | Verified position |
 |---|---|
-| Product definition | Human-driver-first AI vehicle intelligence concept with EasyRide priorities for safety, comfort, inclusive usability and practical cargo storage. |
+| Product definition | Human-driver-first AI vehicle intelligence concept with compact-EV priorities for safety, comfort, inclusive usability and practical cargo storage. |
 | Software and AI | Initial contracts/safety logic, tests and opt-in Hugging Face adapter code are documented. Model inference and vehicle-specific accuracy are not yet tested; local contract types still require alignment with the canonical shared PUI89 AI Core. |
 | Simulation | Simulation-first research direction; no validated road, vehicle-dynamics or autonomous-driving performance is established. |
 | Physical product | No functioning car, verified sensor layout, production CAD/BOM, vehicle integration, roadworthiness or certified safety system is claimed. |
 
-**Next product gate:** align the software contracts with the shared AI Core; define driver-assistance use cases, hazards, data quality and human-control boundaries; build deterministic synthetic scenarios and reproducible evaluations. In parallel, convert EasyRide comfort, accessibility and cargo goals into measurable user and packaging requirements.
+**Next product gate:** align the software contracts with the shared AI Core; define driver-assistance use cases, hazards, data quality and human-control boundaries; build deterministic synthetic scenarios and reproducible evaluations. In parallel, convert compact-EV comfort, accessibility and cargo goals into measurable user and packaging requirements.
 
 **Product discipline:** AI remains advisory; the human driver retains control. No autonomous-driving, road-safety, waterproofing, fire-resistance or production-readiness claims are made. No paid API, cloud GPU, automatic model download or physical vehicle actuation is part of this update.
 
 
 
-![PUI89 AI Car — Vehicle Intelligence Concept](docs/images/pui89-ai-car-concept.svg)
+![PUI89 Compact Smart EV — Vehicle Intelligence Concept](docs/images/pui89-ai-car-concept.svg)
 
 **Repository:** `Pui89/ai-robot-car`  
 **Project type:** Advanced AI-enabled vehicle intelligence and robotics research; software-first, simulation-first.  
 **Status:** Early-stage software scaffold. Not a built, road-tested, autonomous, or road-certified vehicle.
 
+## Compact Smart EV product definition
+
+PUI89 Compact Smart EV is the approved product identity and design direction: a practical, four-wheel compact electric crossover / mini-SUV concept for everyday mobility. The vehicle form should remain recognisably a real, usable car rather than a robot-shaped vehicle or a sports car. The compact class is a design direction, not a frozen dimensional specification.
+
+The electric-vehicle direction is conceptual. Battery chemistry, motor configuration, seating capacity, dimensions, curb mass, payload, range, charging, crash structure and production platform remain unselected or unvalidated engineering decisions. Do not publish numerical vehicle specifications until supported by a documented engineering study. The initial work remains software-first and simulation-first; an existing suitable vehicle platform may be evaluated later, but no purchase or physical integration is authorized by this naming change.
+
+AI functions remain driver-assistance research: road and obstacle awareness, flood/route context, collision-risk warnings, vehicle-health and battery/thermal monitoring, predictive-maintenance research and emergency information. The human driver retains control of steering, acceleration and braking. No autonomous-driving capability is claimed.
+
 ## Design concept
 
-The concept uses a premium electric crossover form in PUI89 deep navy and electric cyan. The illustrative sensor layout communicates a future perception envelope (camera, radar, lidar and proximity sensing), while the software architecture remains human-driver-first: AI produces evidence-linked advisories, not steering, throttle or braking commands.
+The concept uses a premium compact electric crossover form in PUI89 deep navy and electric cyan. The illustrative sensor layout communicates a future perception envelope (camera, radar, lidar and proximity sensing), while the software architecture remains human-driver-first: AI produces evidence-linked advisories, not steering, throttle or braking commands.
 
 **The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, built prototype, or performance claim.** Sensor selection and physical packaging remain future engineering work.
 
-## EasyRide: inclusive, comfortable and practical mobility
+## Human-centred compact EV design
 
-PUI89 AI Car adopts **EasyRide** as a human-centred design direction: make everyday driving easier, more comfortable and more supportive for as many people as possible. The concept is intended to consider women, older adults, new and less-confident drivers, families, and people with different body sizes, strengths and accessibility needs.
+PUI89 Compact Smart EV adopts a human-centred design direction: make everyday driving easier, more comfortable and more supportive for as many people as possible. The concept is intended to consider women, older adults, new and less-confident drivers, families, and people with different body sizes, strengths and accessibility needs.
 
 - **Safety-first experience:** clear visibility, understandable warnings, conservative driver assistance, intuitive controls and reduced distraction are design priorities. Safety performance must be demonstrated through engineering analysis and testing; it is not yet validated.
 - **Comfortable, gentle ride:** investigate supportive seating, easy entry and exit, accessible reach, smooth ride characteristics, low-effort controls, climate comfort and a quiet cabin. These are design targets, not verified vehicle features.
@@ -156,12 +164,12 @@ See [PUI89 AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). Every t
 
 ## Current truth
 
-This repository contains research documentation and an initial software-only contract/safety prototype. It does not contain a functioning car, validated perception model, real-time vehicle integration, autonomous driving capability, or certified safety system. The local contract types are provisional until aligned with the canonical shared PUI89 AI Core. EasyRide features above are design goals and research requirements, not implemented or validated vehicle capabilities.
+This repository contains research documentation and an initial software-only contract/safety prototype. It does not contain a functioning car, validated perception model, real-time vehicle integration, autonomous driving capability, or certified safety system. The local contract types are provisional until aligned with the canonical shared PUI89 AI Core. Human-centred design goals above are design goals and research requirements, not implemented or validated vehicle capabilities.
 
 ## PUI89 portfolio links
 
-- **English project page:** [PUI89 AI Car](https://pui89.github.io/ai-robot-car.html)
-- **Thai project page:** [PUI89 AI Car — ภาษาไทย](https://pui89.github.io/ai-robot-car-th.html)
+- **English project page:** [PUI89 Compact Smart EV](https://pui89.github.io/ai-robot-car.html)
+- **Thai project page:** [PUI89 Compact Smart EV — ภาษาไทย](https://pui89.github.io/ai-robot-car-th.html)
 - **PUI89 main portfolio:** [https://pui89.github.io/](https://pui89.github.io/)
 - **Website source repository:** [Pui89/Pui89.github.io](https://github.com/Pui89/Pui89.github.io)
 - **Motorcycle companion project:** [PUI89 AI Robot Motorcycle — EasyRide](https://github.com/Pui89/AI-Motorcycle-Robotics)
@@ -272,7 +280,7 @@ See [the project-specific spatial integration profile](docs/spatial-intelligence
 <!-- PUI89_EVIDENCE_BACKED_REVIEW:START -->
 ## Evidence-backed project review status
 
-**Project:** PUI89 AI Robot Car  
+**Project:** PUI89 Compact Smart EV  
 **README snapshot (13 November 2026): 0 completed evidence-backed reviews.** This snapshot is not auto-synchronised; the live [PUI89 portfolio review register](https://pui89.github.io/#evidence-backed-project-reviews) is the source of truth.
 
 This is a review-record count, not a statement that development or testing has not occurred. Engineering work, CI runs, test results and simulation evidence may support a review, but do not automatically count as a completed review.

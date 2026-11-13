@@ -1,7 +1,7 @@
 {
   "profile_version": "0.1.0",
   "project_id": "ai-autonomous-robot-car",
-  "project_name": "AI Autonomous Robot Car",
+  "project_name": "PUI89 Compact Smart EV",
   "integration_status": "profile_added_runtime_integration_pending",
   "shared_core": {
     "repository": "Pui89/PUI89-Shared-AI-Core",

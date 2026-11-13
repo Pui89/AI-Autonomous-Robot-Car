@@ -11,7 +11,7 @@ Protect people, animals, assets, data, and project integrity through evidence-le
 2. Flood Rescue AI — flood/disaster rescue-robot concept.
 3. Multimodal Narcotics Screening AI — multimodal screening decision-support and robotic concept.
 4. Homeguard AI Nomad — home/environment monitoring platform and future robot concept.
-5. AI Car — vehicle intelligence and driver-assistance research.
+5. PUI89 Compact Smart EV — compact electric vehicle intelligence and driver-assistance research.
 6. AI Motorcycle — rider-focused vehicle intelligence research.
 
 ## 1. Physical safety and environmental protection
@@ -127,7 +127,7 @@ For every project/release, report:
 - **Flood Rescue AI:** current, depth, debris, entrapment, capsizing, tether/anchor failure, battery isolation in water, rescue-person exposure, communications loss, safe withdrawal. Any depth/current capability requires measured test evidence.
 - **Multimodal Narcotics Screening AI:** false positives/negatives, modality disagreement, sensor calibration, dataset bias/provenance, chain of custody, privacy, human review, and prohibition on autonomous enforcement.
 - **Homeguard AI Nomad:** electrical/fire/water/mold and structural-warning uncertainty, false alarms, privacy, offline operation, safe charging, and clear emergency escalation.
-- **AI Car:** collision exposure, vulnerable road users, vehicle electrical/thermal hazards, occupant privacy, degraded sensing, and no direct steering/throttle/brake control.
+- **Compact Smart EV:** collision exposure, vulnerable road users, vehicle electrical/thermal hazards, occupant privacy, degraded sensing, and no direct steering/throttle/brake control.
 - **AI Motorcycle:** rider vulnerability, two-wheel stability/traction context, road-surface contamination, weather/visibility, distraction minimization, and no direct steering/throttle/brake control.
 
 ## 12. Implementation gates

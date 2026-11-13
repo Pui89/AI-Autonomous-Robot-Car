@@ -1,4 +1,4 @@
-# PUI89 AI Car — Master Engineering Specification v2.0
+# PUI89 Compact Smart EV — Master Engineering Specification v2.0
 
 **Status:** Proposed engineering baseline for software-first research and future qualified vehicle engineering.  
 **Last updated:** 2026-11-13  
@@ -8,11 +8,11 @@
 
 | Attribute | Baseline |
 |---|---|
-| Product | PUI89 AI Car |
-| Vehicle concept | Premium utility SUV, four doors |
-| Seating | Four occupants |
-| Powertrain | Hybrid; architecture selection remains open |
-| Payload target | 450–520 kg, including occupants, cargo and carried equipment |
+| Product | PUI89 Compact Smart EV |
+| Vehicle concept | Practical four-wheel compact electric crossover / mini-SUV concept |
+| Seating | Not fixed; compact passenger packaging and accessible entry/exit require study |
+| Powertrain | EV-oriented concept; battery, motor, inverter and charging architecture remain unselected |
+| Payload | Not set; must be established by qualified vehicle-specific engineering |
 | Environmental strategy | Flood-resilient design target; no wading capability claimed |
 | Market intent | Global, subject to regional engineering and type approval |
 | Driving authority | Human driver |
@@ -20,9 +20,9 @@
 | Development strategy | Software-first, simulation-first, low-resource and open-source-first |
 | Design language | Deep Navy, Electric Cyan and Titanium Silver |
 
-The 450–520 kg payload is an unvalidated design target, not a demonstrated rating. It must be reconciled with curb mass, GVWR, front/rear axle ratings, tire load ratings, suspension, brakes, center of gravity, occupant assumptions, cargo restraint and applicable regulations. Occupants count toward payload. Accessories and installed equipment also consume payload.
+No payload figure is approved. Any future payload must be established from curb mass, GVWR, front/rear axle ratings, tire load ratings, suspension, brakes, centre of gravity, occupant assumptions, cargo restraint and applicable regulations. Occupants, accessories and installed equipment count toward payload.
 
-Hybrid is selected as the product direction, but HEV, PHEV and series-hybrid architectures remain alternatives pending a documented trade study. Do not infer a chosen engine, motor, battery capacity, transmission, range, speed, fuel economy or charging capability.
+The product direction is EV-oriented, but no battery chemistry/capacity, motor, inverter, charging standard, range, speed or performance specification is selected or validated. Compare feasible compact EV platform architectures through a documented trade study before any specification is frozen.
 
 ## 2. Product principles
 
@@ -41,7 +41,7 @@ Hybrid is selected as the product direction, but HEV, PHEV and series-hybrid arc
 
 ### 3.1 Occupants and usability
 
-- Four-seat packaging target with safe ingress/egress and clear occupant protection zones.
+- Compact passenger packaging study with safe ingress/egress, accessible reach and clear occupant protection zones; seat count remains open.
 - Evaluate seat adjustability, visibility, reach, readability, climate comfort, noise and vibration.
 - Design cargo storage around restraint, visibility, occupant protection, emergency exits and airbag deployment zones.
 - Consider diverse body sizes, ages and accessibility needs without making unsupported safety or accessibility claims.
@@ -49,7 +49,7 @@ Hybrid is selected as the product direction, but HEV, PHEV and series-hybrid arc
 
 ### 3.2 Payload and vehicle dynamics
 
-- Treat 450–520 kg as a target for engineering study only.
+- Do not adopt the previously explored 450–520 kg figure; no payload target is approved.
 - Define occupant, luggage, accessory, roof-load and towing assumptions separately.
 - Calculate GVWR and axle loads from a defined curb-mass configuration.
 - Validate tire load/speed ratings, wheel, suspension, chassis, brakes, thermal loads, stability and center of gravity.
@@ -68,9 +68,9 @@ Requirements include:
 - Underbody protection without compromising crash structures or serviceability.
 - Corrosion resistance and maintainability.
 
-### 3.4 Hybrid powertrain
+### 3.4 EV powertrain and energy system
 
-Evaluate HEV, PHEV and series hybrid using a documented weighted trade study. Compare energy efficiency over relevant duty cycles, mass, payload impact, packaging, thermal management, serviceability, supply chain, cost, emissions, regional fuel/charging availability and safety.
+Evaluate suitable battery-electric platform and motor/inverter/battery architectures using a documented weighted trade study. Compare energy efficiency over relevant duty cycles, mass, payload impact, packaging, thermal management, serviceability, supply chain, cost, charging access and safety.
 
 Requirements include:
 - Engine, motor, inverter, transmission/generator and battery integration.
@@ -166,7 +166,7 @@ No gate is presumed passed by this document. Physical vehicle validation require
 
 ## 8. Key unresolved decisions
 
-- HEV vs PHEV vs series hybrid.
+- Compact battery-electric platform and powertrain architecture options.
 - Unibody vs body-on-frame.
 - Curb-mass and GVWR budget.
 - Axle-load distribution and tire specifications.

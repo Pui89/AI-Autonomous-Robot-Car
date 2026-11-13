@@ -1,4 +1,4 @@
-# AI Autonomous Robot Car: Spatial Intelligence integration profile
+# PUI89 Compact Smart EV: Spatial Intelligence integration profile
 
 This project now has a project-specific spatial integration profile at
 `INTEGRATION_PROFILE.json`.
