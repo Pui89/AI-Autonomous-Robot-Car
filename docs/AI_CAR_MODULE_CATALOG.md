@@ -1,4 +1,4 @@
-# PUI89 AI Car — 24-Module Intelligence Catalogue
+# PUI89 AI Global SUV — 24-Module Intelligence Catalogue
 
 **Status:** Proposed module catalogue and implementation roadmap.  
 **Authority:** Advisory-only; human driver retains control.  
@@ -9,7 +9,7 @@
 | ID | Module | Inputs (when available) | Advisory output | Key failure cases |
 |---|---|---|---|---|
 | AI-CAR-01 | Road Perception | RGB/depth/radar observations | Road/obstacle observations | Occlusion, glare, blur, stale frames |
-| AI-CAR-02 | Flood Intelligence | Camera, approved water sensors, map context | Water hazard, unknown depth, route-avoidance warning | Reflection, uncertain depth, moving water |
+| AI-CAR-02 | Flood-risk Intelligence | Camera, approved water sensors, map context | Water hazard, unknown depth, route-avoidance warning | Reflection, uncertain depth, moving water |
 | AI-CAR-03 | Weather Intelligence | Rain/ambient sensors, approved weather context | Rain, visibility and weather context | Missing/stale weather data |
 | AI-CAR-04 | Collision Intelligence | Tracked objects and vehicle context | Potential collision-risk advisory | Incorrect motion estimate, missed object |
 | AI-CAR-05 | Battery Intelligence | Validated BMS signals | Battery status/anomaly advisory | Missing, implausible or stale BMS values |

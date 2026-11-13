@@ -1,4 +1,4 @@
-# PUI89 AI Car — GitHub Implementation Backlog v2
+# PUI89 AI Global SUV — GitHub Implementation Backlog v2
 
 **Status:** Proposed backlog. Issues have not been created automatically.  
 **Working mode:** Software-first, CPU-only, open-source-first, no-cost by default.  
@@ -10,8 +10,8 @@
 |---|---|---|---|
 | CAR-001 | Publish master engineering specification | P0 | Product direction, assumptions, unresolved decisions and validation boundary documented |
 | CAR-002 | Define chassis/payload engineering checklist | P0 | Occupant-inclusive payload, GVWR, GAWR, curb mass, tires, brakes, suspension and CG gates listed |
-| CAR-003 | Create hybrid architecture trade study | P0 | HEV/PHEV/series hybrid compared without premature selection |
-| CAR-004 | Define flood-resilient design requirements | P0 | Component exposure map, inspection procedure and no-unverified-wading rule |
+| CAR-003 | Evaluate full HEV first; compare ICE, HEV, PHEV and BEV | P0 | HEV/PHEV/series hybrid compared without premature selection |
+| CAR-004 | Define flood-risk awareness and avoidance requirements | P0 | Component exposure map, inspection procedure and no-unverified-wading rule |
 | CAR-005 | Create global compliance applicability matrix | P1 | Jurisdiction-specific applicability review plan; no blanket compliance claim |
 | CAR-006 | Create inclusive cabin and cargo requirements | P1 | Ergonomics, accessibility, occupant protection and cargo restraint criteria |
 

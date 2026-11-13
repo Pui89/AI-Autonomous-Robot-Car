@@ -1,4 +1,4 @@
-# PUI89 AI Car — Master Engineering Specification v2.0
+# PUI89 AI Global SUV — Master Engineering Specification v2.0
 
 **Status:** Proposed engineering baseline for software-first research and future qualified vehicle engineering.  
 **Last updated:** 2026-11-13  
@@ -8,12 +8,12 @@
 
 | Attribute | Baseline |
 |---|---|
-| Product | PUI89 AI Car |
-| Vehicle concept | Premium utility SUV, four doors |
+| Product | PUI89 AI Global SUV |
+| Vehicle concept | Medium-size, five-door global-market SUV |
 | Seating | Four occupants |
-| Powertrain | Hybrid; architecture selection remains open |
+| Powertrain | HEV-first research priority; full HEV to be evaluated first, no production selection |
 | Payload target | 450–520 kg, including occupants, cargo and carried equipment |
-| Environmental strategy | Flood-resilient design target; no wading capability claimed |
+| Environmental strategy | Flood-risk awareness and route avoidance; no wading capability claimed |
 | Market intent | Global, subject to regional engineering and type approval |
 | Driving authority | Human driver |
 | AI authority | Advisory and proposal-only |
@@ -22,7 +22,7 @@
 
 The 450–520 kg payload is an unvalidated design target, not a demonstrated rating. It must be reconciled with curb mass, GVWR, front/rear axle ratings, tire load ratings, suspension, brakes, center of gravity, occupant assumptions, cargo restraint and applicable regulations. Occupants count toward payload. Accessories and installed equipment also consume payload.
 
-Hybrid is selected as the product direction, but HEV, PHEV and series-hybrid architectures remain alternatives pending a documented trade study. Do not infer a chosen engine, motor, battery capacity, transmission, range, speed, fuel economy or charging capability.
+HEV-first is the research priority: evaluate full HEV first, while retaining powertrain-neutral AI compatibility for ICE, HEV, PHEV and BEV contexts. Final architecture selection remains subject to a documented vehicle- and market-specific trade study. Do not infer a chosen engine, motor, battery capacity, transmission, range, speed, fuel economy or charging capability.
 
 ## 2. Product principles
 

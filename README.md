@@ -1,336 +1,107 @@
-# PUI89 Compact Smart Car
+# PUI89 AI Global SUV
 
+**Intelligent mobility. Global-market thinking. Evidence-led safety.**
 
-## Public privacy boundary
+PUI89 AI Global SUV is a software-first vehicle-intelligence research concept for a **medium-size, five-door SUV**. The design direction prioritizes practical passenger and cargo space, all-weather usability, global-market adaptability and risk-aware driver support. It is not a small city car.
 
-This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
+## Product direction
 
-## Open-source-first engineering
+| Dimension | Current direction | Evidence boundary |
+|---|---|---|
+| Official project name | **PUI89 AI Global SUV** | Confirmed project identity |
+| Vehicle class | Medium-size SUV, five-door | Design direction; no production vehicle selected |
+| Initial powertrain study | **HEV-first** (full hybrid preferred for initial evaluation) | No supplier, drivetrain or vehicle platform selected |
+| AI architecture | PUI89 Shared AI Core | Software-first; advisory only |
+| Market intent | Global-market requirements and regional adaptation | No market homologation or regulatory compliance claimed |
+| Environment | Flood-risk awareness, route avoidance, all-weather hazard context | No flood wading, waterproofing or fire-resistance capability claimed |
+| Human authority | Human driver retains control | No autonomous steering, throttle, braking or propulsion |
 
-PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
+## HEV-first, powertrain-neutral AI
 
+Full Hybrid (HEV) is the preferred first powertrain architecture to study. It offers electric-motor assistance without requiring routine external plug-in charging. This is a research priority, not a final drivetrain decision or a claim of fuel-economy performance.
 
+Keep the PUI89 AI Core independent of propulsion type. Versioned, read-only vehicle-context adapters may support petrol/ICE, HEV, PHEV and BEV information without creating separate AI stacks. Compare specific vehicles and markets using verified specifications, safety ratings, service access, warranty, lifecycle cost and independent evidence. Do not treat mild hybrid (MHEV) as equivalent to full hybrid (HEV).
 
-## PUI89 — Intelligent Systems. Verifiable Decisions. Safer Outcomes.
+## Global-market engineering
 
-PUI89 develops intelligent software and next-generation robotic systems for practical challenges across agriculture, emergency response, multimodal inspection, home environments and mobility. Our engineering approach integrates perception, contextual reasoning, decision intelligence, safety engineering and evidence-led validation.
+The concept should be assessed against regional differences rather than assuming one configuration fits every country:
 
-### Engineering capabilities
+- Climate, rainfall, heat, dust, road quality and flood exposure.
+- Local regulations, homologation, crash and occupant-protection requirements.
+- Fuel quality and availability, charging infrastructure and energy prices.
+- Service networks, spare parts, warranty support and lifecycle cost.
+- Passenger ergonomics, accessibility, child-seat compatibility and cargo needs.
+- Cybersecurity, privacy, data residency and connected-vehicle requirements.
 
-- **Perception and sensing:** visual, spatial and multimodal information processing.
-- **Context and reasoning:** world-state representation, uncertainty handling and evidence alignment.
-- **Decision intelligence:** structured recommendations, action proposals and human approval boundaries.
-- **Safety engineering:** risk-aware operating limits, safe-state logic and failure reporting.
-- **Verification and assurance:** reproducible tests, benchmark records, provenance and traceable engineering evidence.
+No global certification, regulatory approval, supplier agreement or market launch is claimed.
 
-### Technology governance
+## Flood-risk awareness and fire/thermal safety
 
-PUI89 selects and integrates technologies according to capability, provenance, security, licence obligations, maintainability, interoperability and operational suitability. Product claims are grounded in documented implementation and validation rather than a list of underlying components. Required third-party notices and attributions remain in the appropriate technical and legal records.
+The intended AI role is **awareness and avoidance**, not proving that the vehicle can drive through floodwater.
 
-**Development principle:** distinguish implemented capabilities, tested software behaviour, simulation results, proposed designs and independently validated real-world performance. A concept or passing software test is not represented as a commercially validated physical product.
+- Identify documented flood-risk context and advise route avoidance.
+- If water depth, current, road condition or passability is unknown, report **“unknown — do not enter”** rather than estimating a safe depth.
+- Never recommend driving through moving or rising floodwater. After suspected water ingress or submersion, do not restart or charge; arrange qualified inspection and recovery.
+- Fire, smoke, battery and thermal-event information may be surfaced only when supported by documented signals. Missing signals must be shown as unavailable; no system can claim to detect every fire.
+- For suspected fire or smoke, the advisory priority is occupant evacuation, moving away from the vehicle and contacting emergency services. Do not instruct occupants to fight a vehicle or traction-battery fire.
+- Any future water-ingress, fire-containment, thermal-propagation or crashworthiness claim requires qualified engineering and appropriate independent physical testing.
 
-> **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
-> 
-> **Project:** PUI89 Compact Smart Car  
-> **Focus:** Compact, human-driver-first smart city car concept; full-hybrid (HEV) preferred for initial study, with powertrain-neutral AI architecture  
-> **Development stage:** Early software scaffold and design requirements; no functioning vehicle, road test or certification is established.
-> 
-> **Project website:** [English](https://pui89.github.io/ai-robot-car.html) · [ภาษาไทย](https://pui89.github.io/ai-robot-car-th.html) · [PUI89 portfolio](https://pui89.github.io/)
-> 
-> **Validation boundary:** AI outputs are advisory research concepts only; no autonomous steering, throttle or braking is enabled or claimed.
+These are design requirements and software research topics, not validated physical capabilities.
 
-## Development stage
+## PUI89 Shared AI Core
 
-**Current stage:** Early software scaffold & design requirements  
-**ขั้นการพัฒนา:** โครงสร้างซอฟต์แวร์และข้อกำหนดการออกแบบระยะแรก
+Use the shared contracts and evidence boundaries:
 
-**Evidence:** Research requirements and an initial software-only safety/contract scaffold are documented.
+- **Observation** — source, modality, timestamp, quality and provenance.
+- **WorldState** — interpreted context, uncertainty, freshness and explicit unknowns.
+- **ActionProposal** — advisory recommendation, rationale, evidence and authority boundary.
+- **FailureReport** — failure mode, severity, evidence, containment and recovery information.
 
-**Limitations:** No vehicle integration, road testing, autonomous driving capability or certification is established.
+The AI may provide route-risk warnings, road/weather context, vehicle-health observations and explainable driver assistance. It must not command steering, throttle, braking, propulsion, high-voltage isolation or battery management.
 
-**Next milestone:** Build a software-only hazard-awareness demonstrator with traceable mock observations and human-driver decision boundaries.
+## Development status
 
+**Stage:** Early software and research foundation.
 
-## Project website QR codes
+Existing repository materials include a deterministic signal-to-advisory baseline, initial Shared AI Core serialization adapter, synthetic contract fixtures, safety documentation and a proposed 24-module catalogue. These do not establish a functioning vehicle, validated perception model, vehicle integration, road testing or certification.
 
-<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/ai-robot-car.html"><img src="https://pui89.github.io/qr/ai-robot-car-en.png" width="160" alt="PUI89 Compact Smart Car English website QR code"></a><br><a href="https://pui89.github.io/ai-robot-car.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/ai-robot-car-th.html"><img src="https://pui89.github.io/qr/ai-robot-car-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 Compact Smart Car"></a><br><a href="https://pui89.github.io/ai-robot-car-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
+### Next engineering gates
 
-## PUI89 development maturity snapshot — 12 November 2026
-
-**Strategic direction: From AI Projects to AI Products.**  
-**Current maturity: Level 2 — Architecture Defined.** The product architecture and initial software-only contract/safety foundation are documented; vehicle integration and road performance are not established.
-
-
-**Shared platform evidence (separate from project validation):** the PUI89 Shared AI Core main-branch CI reported 187 dependency-free tests passed on 11 November 2026. This platform-level result does not establish this project's model accuracy, physical integration or field performance.
-
-| Area | Verified position |
-|---|---|
-| Product definition | Human-driver-first AI vehicle intelligence concept with EasyRide priorities for safety, comfort, inclusive usability and practical cargo storage. |
-| Software and AI | Initial contracts/safety logic, tests and opt-in Hugging Face adapter code are documented. Model inference and vehicle-specific accuracy are not yet tested; local contract types still require alignment with the canonical shared PUI89 AI Core. |
-| Simulation | Simulation-first research direction; no validated road, vehicle-dynamics or autonomous-driving performance is established. |
-| Physical product | No functioning car, verified sensor layout, production CAD/BOM, vehicle integration, roadworthiness or certified safety system is claimed. |
-
-**Next product gate:** align the software contracts with the shared AI Core; define driver-assistance use cases, hazards, data quality and human-control boundaries; build deterministic synthetic scenarios and reproducible evaluations. In parallel, convert EasyRide comfort, accessibility and cargo goals into measurable user and packaging requirements.
-
-**Product discipline:** AI remains advisory; the human driver retains control. No autonomous-driving, road-safety, waterproofing, fire-resistance or production-readiness claims are made. No paid API, cloud GPU, automatic model download or physical vehicle actuation is part of this update.
-
-
-
-![PUI89 Compact Smart Car — Vehicle Intelligence Concept](docs/images/pui89-ai-car-concept.svg)
-
-**Repository:** `Pui89/PUI89-Compact-Smart-Car`  
-**Project type:** Advanced AI-enabled vehicle intelligence and robotics research; software-first, simulation-first.  
-**Status:** Early-stage software scaffold. Not a built, road-tested, autonomous, or road-certified vehicle.
-
-## Design concept
-
-The concept direction is a compact smart city car in PUI89 deep navy and electric cyan. The preferred initial powertrain study is full hybrid (HEV), while the AI architecture remains compatible with petrol-only, HEV, PHEV and BEV vehicles. Existing artwork is illustrative and does not establish a selected drivetrain, verified sensor layout, production design or built prototype.
-
-**The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, selected powertrain, built prototype, or performance claim.** Sensor selection, vehicle packaging and drivetrain selection remain future engineering work.
-
-## Compact Smart Car — powertrain strategy (2026–2027)
-
-**Preferred initial concept: compact full hybrid (HEV), subject to market, supplier, cost and engineering validation.** This is a concept decision, not a selected production platform or a claim that PUI89 has built or tested a vehicle.
-
-- **Initial vehicle direction:** compact, human-driver-first city car with full hybrid (HEV) as the preferred first study. An HEV does not require external plug-in charging; its battery is charged through the vehicle's hybrid system and regenerative braking.
-- **Powertrain-neutral AI:** keep PUI89 AI Core independent of propulsion type. The same vehicle-intelligence software should be adaptable to petrol-only ICE, HEV, plug-in hybrid (PHEV) and battery-electric (BEV) vehicles through versioned, read-only vehicle-context adapters.
-- **No duplicated AI stack:** perception, Observation, WorldState, evidence, uncertainty, hazard reasoning, ActionProposal and FailureReport remain shared. Powertrain-specific telemetry is an adapter concern, not a separate AI Core.
-- **Human control:** AI remains advisory. No ECU/CAN connection, steering, throttle, braking, propulsion, battery-management or charging command is enabled or claimed.
-- **Evidence boundary:** HEV is the preferred concept for 2026–2027 because it avoids dependence on external charging while retaining electric-motor assistance. Fuel economy, reliability, ownership cost, emissions and suitability must be assessed against specific production vehicles and local conditions; no savings or performance are claimed.
-- **Mild hybrid distinction:** do not treat mild hybrid (MHEV) as equivalent to full hybrid (HEV). Compare the actual architecture and independent test data before choosing a supplier or vehicle platform.
-
-**Future compatibility:** preserve interfaces for petrol, HEV, PHEV and BEV context without committing to drivetrain hardware. A future change in market conditions must not require rewriting the Shared AI Core.
-
-
-
-## EasyRide: inclusive, comfortable and practical mobility
-
-PUI89 Compact Smart Car adopts **EasyRide** as a human-centred design direction: make everyday driving easier, more comfortable and more supportive for as many people as possible. The concept is intended to consider women, older adults, new and less-confident drivers, families, and people with different body sizes, strengths and accessibility needs.
-
-- **Safety-first experience:** clear visibility, understandable warnings, conservative driver assistance, intuitive controls and reduced distraction are design priorities. Safety performance must be demonstrated through engineering analysis and testing; it is not yet validated.
-- **Comfortable, gentle ride:** investigate supportive seating, easy entry and exit, accessible reach, smooth ride characteristics, low-effort controls, climate comfort and a quiet cabin. These are design targets, not verified vehicle features.
-- **Useful, generous storage:** plan practical luggage and cargo space inside the vehicle for everyday shopping, travel bags, mobility-related items and larger bulky belongings. Storage must be designed around safe load limits, secure restraint, visibility and passenger protection; cargo must never obstruct controls, airbags, exits or the driver's view.
-- **Helpful AI assistance:** explore clear route and hazard information, parking support, vehicle-health alerts, trip preparation and simple explanations. AI should reduce workload without distracting the driver or taking control away from the human.
-- **Inclusive usability:** evaluate adjustable seating and steering reach, easy-to-read displays, simple interaction, helpful voice/interface options and accessible entry/exit. Avoid assuming that one body type, age group or level of driving experience represents everyone.
-- **Human control and fallback:** the driver remains responsible for driving. Assistance must communicate uncertainty, allow the driver to ignore or dismiss non-critical suggestions, and fail safely when information is missing or unreliable.
-
-The goal is a vehicle concept that is **safe by design, comfortable to use, practical to carry everyday and larger items, and genuinely helpful across different users**. These goals require user research, ergonomic assessment, hazard analysis, simulation and qualified vehicle testing before any real-world safety or accessibility claim can be made.
-
-## Mission
-
-Develop a safety-first vehicle intelligence platform for environmental awareness, hazard detection, vehicle-health monitoring, predictive maintenance, and explainable driver assistance. A human driver remains responsible for vehicle control. This repository has no physical vehicle integration or actuator authority.
-
-## PUI89 engineering rules
-
-- **Strict local-first:** external services and datasets require prior review.
-- **Simulation first:** no physical vehicle, ECU, vehicle-bus or actuator connections.
-- **Safety before features:** uncertainty, human review, conservative failure handling and hazard analysis are mandatory.
-- **Evidence before claims:** distinguish proposed, implemented, simulation-tested, bench-tested and independently validated capabilities.
-- **Shared AI Core:** reuse canonical PUI89 contracts and services; local compatibility types are temporary and must not become a competing core.
-- **Security by default:** least privilege, dependency/provenance review, protected changes and no secrets in source.
-- **No unsupported autonomous-driving, roadworthiness, waterproofing, fire-resistance or safety claims.**
-
-## Capability research areas
-
-1. Environmental perception and hazard-awareness research.
-2. Human-facing driver-assistance concepts.
-3. Vehicle-health and predictive-maintenance research.
-4. Road, weather and visibility context using documented lawful data or simulation.
-5. Agentic analysis with evidence and human oversight.
-6. SHIELD risk monitoring, stale-data handling and conservative degradation.
-7. Inclusive human-machine interaction, comfort, ergonomics and practical cargo-use research.
-
-## Development stages
-
-1. Define requirements, hazards, operating boundaries and shared AI Core interfaces.
-2. Gather inclusive user needs and define measurable safety, comfort, usability and cargo requirements.
-3. Build software-only contracts and deterministic safety gates.
-4. Create synthetic scenarios and simulation adapters.
-5. Add evaluation, robustness, security, ergonomics and regression tests.
-6. Consider hardware only after qualified engineering, safety, cybersecurity and legal review.
+1. Align adapter contracts with the canonical PUI89 Shared AI Core and retain conformance evidence.
+2. Define medium-size SUV user, packaging, passenger, cargo and global-market requirements without presenting targets as specifications.
+3. Build synthetic flood-risk, fast-moving-water, unknown-depth, smoke, thermal-event and sensor-failure scenarios.
+4. Evaluate transparent baselines, false alerts, missed hazards, stale-data rejection and uncertainty behaviour.
+5. Complete qualified automotive, hybrid-powertrain, battery, fire-safety, cybersecurity and regulatory reviews before any hardware integration.
 
 ## Repository map
 
-- `docs/PROJECT_PLAN.md` — scope and staged roadmap.
-- `docs/AI_ARCHITECTURE.md` — software architecture and data flow.
-- `docs/AGENTIC_AI_SYSTEM.md` — agent roles and authority boundaries.
-- `docs/UNIVERSAL_SHIELD.md` — cross-project safety and resilience standard.
-- `docs/AUTONOMOUS_SIMULATION.md` — simulation-only research plan.
-- `docs/PREDICTIVE_MAINTENANCE.md` — health and maintenance research.
-- `docs/SAFETY_CASE.md` — hazards and safeguards.
+- `docs/PROJECT_PLAN.md` — product direction and staged roadmap.
+- `docs/AI_ARCHITECTURE.md` — software architecture and shared contracts.
+- `docs/MASTER_ENGINEERING_SPEC_V2.md` — engineering requirements and open design decisions.
+- `docs/AI_CAR_MODULE_CATALOG.md` — proposed vehicle-intelligence modules.
+- `docs/SAFETY_CASE.md` — hazards, safeguards and release gates.
 - `docs/THREAT_MODEL.md` and `SECURITY.md` — security risks and reporting.
-- `docs/AI_BENCHMARKS.md` — reproducible evaluation protocol.
 - `docs/IMPLEMENTATION_STATUS.md` — implemented, missing and next work.
-- `pui89_car/` — dependency-local compatibility prototype and safety gates.
-- `tests/` — standard-library unit tests.
-- `.github/workflows/quality.yml` — automated documentation, test and compile checks.
+- `docs/AI_BENCHMARKS.md` — reproducible evaluation protocol.
+- `pui89_car/` — software-only compatibility and advisory prototype.
+- `tests/` — dependency-free tests and synthetic fixtures.
 
-## AI and advanced engineering resources
+## Open-source-first and responsible engineering
 
-See [PUI89 AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). Every tool, model, dataset and hosted feature requires review of its licence, provenance, security and hardware requirements before adoption. Software licences may not cover model weights, compute, datasets or commercial deployment rights.
+PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Review model, dataset, dependency and asset provenance, licences, security and hardware requirements before adoption. Do not automatically download models or install large tools. No paid APIs, metered cloud GPUs or paid subscriptions are part of the default workflow.
 
-## Current truth
+## Current truth and limitations
 
-This repository contains research documentation and an initial software-only contract/safety prototype. It does not contain a functioning car, validated perception model, real-time vehicle integration, autonomous driving capability, or certified safety system. The local contract types are provisional until aligned with the canonical shared PUI89 AI Core. EasyRide features above are design goals and research requirements, not implemented or validated vehicle capabilities.
+This repository is a research and software foundation. It does **not** contain a functioning SUV, selected production platform, validated drivetrain, verified sensor layout, production CAD/BOM, real-world flood or fire protection, autonomous-driving capability, road test or certified safety system. Concept art is illustrative only. All physical capabilities remain subject to engineering and independent validation.
 
-## Repository identity
+## Project links
 
-**Official project name:** PUI89 Compact Smart Car  
-**Planned repository name:** `PUI89-Compact-Smart-Car`  
-**Legacy repository name:** `AI-Autonomous-Robot-Car` (rename pending; repository settings must be changed on GitHub).
-
-## PUI89 portfolio links
-
-- **English project page:** [PUI89 Compact Smart Car](https://pui89.github.io/ai-robot-car.html)
-- **Thai project page:** [PUI89 Compact Smart Car — ภาษาไทย](https://pui89.github.io/ai-robot-car-th.html)
-- **PUI89 main portfolio:** [https://pui89.github.io/](https://pui89.github.io/)
-- **Website source repository:** [Pui89/Pui89.github.io](https://github.com/Pui89/Pui89.github.io)
-- **Motorcycle companion project:** [PUI89 AI Robot Motorcycle — EasyRide](https://github.com/Pui89/AI-Motorcycle-Robotics)
+- [English project page](https://pui89.github.io/ai-robot-car.html)
+- [Thai project page](https://pui89.github.io/ai-robot-car-th.html)
+- [PUI89 portfolio](https://pui89.github.io/)
+- [Website source](https://github.com/Pui89/Pui89.github.io)
+- [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core)
 
 ## License
 
-This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file.
-
-Unless a file or component states otherwise, the Apache-2.0 licence applies to the original project materials in this repository. Third-party datasets, model weights, images, trademarks and other externally sourced assets retain their own licences and terms; check their provenance before use or redistribution.
-
-Copyright 2026 Pui89.
-
-
-## Hugging Face vision models — opt-in local integration
-
-This repository now includes real Hugging Face checkpoint adapters in [`pui89_models/hf_vision.py`](pui89_models/hf_vision.py), with project-specific usage boundaries in [`docs/HUGGING_FACE_MODEL_INTEGRATION.md`](docs/HUGGING_FACE_MODEL_INTEGRATION.md).
-
-- **OWLv2:** `google/owlv2-base-patch16-ensemble` for text-conditioned object proposals.
-- **Intel DPT-Hybrid:** `Intel/dpt-hybrid-midas` for relative scene depth where appropriate; not calibrated distance or physical depth.
-- **local-first default:** no packages or model weights are installed/downloaded automatically; CPU-only inference, local cache only by default, no hosted inference API or cloud GPU.
-- **Evidence status:** adapter code is added; model inference and project-specific accuracy are NOT YET TESTED. Outputs remain uncertain observations for human review, never actuator commands.
-
-
-
-
----
-
-## Security, malware and supply-chain protection
-
-Security policy: [SECURITY.md](SECURITY.md). Report suspected vulnerabilities privately; do not publish exploit details, vehicle data or secrets in public issues.
-
-Project-specific controls and review requirements:
-- Treat simulated road scenes, maps, telemetry, vehicle-health inputs, model outputs and imported files as untrusted.
-- Validate units, ranges, timestamps, source and stale/conflicting observations.
-- Review dependencies, simulator assets, model files and GitHub Actions for provenance, licences and vulnerabilities before adoption.
-- Never commit credentials, personal location data or vehicle identifiers.
-- This repository has no physical vehicle or actuator authority; AI output is advisory only and must never be wired to steering, throttle, braking or vehicle buses without a separately approved safety programme.
-- Keep CI least-privilege and do not expose secrets to untrusted pull-request code.
-
-A scan or passing test is evidence only for the checks actually run; it does not establish whether the repository contains malware or vulnerabilities.
-
-## PUI89 seven-dimension quality recommendations
-
-**Last reviewed: 8 November 2026 · Review month: November 2026**
-
-This project uses the shared PUI89 quality framework. The indicators are guidance/status labels, not scores, certification or proof that work is complete.
-
-| Dimension | Recommendation for this project | Indicator |
-|---|---|---|
-| Brand identity | Maintain the PUI89 Deep Navy + Electric Cyan system, consistent project naming and the approved project accent. | 🔵 Guidance |
-| Website and accessibility | Keep English and Thai pages aligned, responsive, accessible, correctly linked and date-stamped. | 🔵 Guidance |
-| AI software and applications | Version contracts, preserve provenance, propagate uncertainty, abstain on insufficient evidence and test safe human-review boundaries. | 🟢 Quality target |
-| Physical products and robotics | Define measurable structural, power, thermal, water-ingress, fire-risk, maintenance and emergency-stop requirements; do not claim untested ratings. | 🟠 Evidence required |
-| Documentation and research evidence | Maintain architecture, requirements, reproducible tests, data/model licences, limitations and traceable evidence links. | 🔵 Guidance |
-| Product and commercial readiness | Validate the user problem, intended operator, value, support model, lawful IP/data position and release gates before commercial claims. | 🟠 Evidence required |
-| Professional environment and presentation | Use consistent technical diagrams, demonstrations and partner-facing materials; do not imply facilities or partnerships without evidence. | ⚪ Not assessed |
-
-**Project-specific priority:** Keep the human-driver-first boundary. Prioritise steering/braking independence, restraints, visibility, accessible entry/exit, payload, crashworthiness, manual override and simulation-to-bench validation gates. Do not imply public-road autonomy or vehicle certification.
-
-**Status legend:** 🔵 framework guidance added · 🟢 engineering quality target · 🟠 evidence or validation still required · ⚪ not assessed. These labels describe the review state of recommendations, not overall project maturity. Project maturity changes only when supported by verified repository evidence, reproducible tests or controlled validation.
-
-
-<!-- PUI89_PROJECT_STRENGTH_SCORECARD:START -->
-## PUI89 Project Strength Scorecard | เกณฑ์ประเมินความแข็งแกร่งของโครงการ
-
-**Current review status: Not yet scored · Completed evidence-backed strength reviews: 0.** This is a recordkeeping status, not a claim that no development or testing exists.
-
-**สถานะการประเมิน: ยังไม่มีคะแนน · รายงานประเมินที่เสร็จสมบูรณ์และมีหลักฐาน: 0 รายการ** ตัวเลขนี้หมายถึงจำนวนรายงานที่บันทึกครบตามเกณฑ์ ไม่ได้หมายความว่าไม่มีการพัฒนาหรือทดสอบ
-
-### Four Project Indicators | ตัวชี้วัดโครงการ 4 ด้าน
-
-| Indicator / ตัวชี้วัด | What it measures / สิ่งที่ประเมิน | Current status / สถานะ |
-|---|---|---|
-| Engineering Strength / ความแข็งแกร่งทางวิศวกรรม | Verified technical capability and system integration / ความสามารถทางเทคนิคและการเชื่อมต่อระบบที่ตรวจสอบได้ | Not yet assessed / ยังไม่ได้ประเมิน |
-| Evidence Confidence / ความเชื่อมั่นของหลักฐาน | Evidence traceability, reproducibility and validation quality / การตรวจสอบย้อนกลับ การทำซ้ำ และคุณภาพการตรวจสอบ | Not yet assessed / ยังไม่ได้ประเมิน |
-| Implementation Level / ระดับการพัฒนาที่ดำเนินการแล้ว | Work actually implemented, separated from proposed work / งานที่พัฒนาแล้วจริง แยกจากงานที่เป็นข้อเสนอ | Not yet assessed / ยังไม่ได้ประเมิน |
-| Project Maturity / ความสมบูรณ์ของโครงการ | Evidence-based development stage, from concept to operational demonstration / ระยะการพัฒนาที่อ้างอิงหลักฐาน ตั้งแต่แนวคิดถึงการสาธิตการใช้งานจริง | Formal stage assessment pending / รอการประเมินระดับอย่างเป็นทางการ |
-
-These four indicators are separate from the weighted 100-point score below. No score, percentage or maturity stage is assigned until a dated evidence-backed review is completed.
-
-ตัวชี้วัดทั้ง 4 ด้านนี้แยกจากคะแนนถ่วงน้ำหนัก 100 คะแนนด้านล่าง จะไม่กำหนดคะแนน เปอร์เซ็นต์ หรือระดับความสมบูรณ์จนกว่าจะมีรายงานประเมินที่ลงวันที่และมีหลักฐานครบถ้วน
-
-| Dimension / ด้านประเมิน | Weight / น้ำหนัก |
-|---|---:|
-| Technical capability / ความสามารถทางเทคนิค | 25 |
-| Testing and evidence / การทดสอบและหลักฐาน | 25 |
-| Safety and reliability / ความปลอดภัยและความน่าเชื่อถือ | 20 |
-| Engineering maturity / วุฒิภาวะทางวิศวกรรม | 15 |
-| Documentation and reproducibility / เอกสารและการทำซ้ำผล | 10 |
-| Real-world validation / การตรวจสอบในโลกจริง | 5 |
-| **Total / รวม** | **100** |
-
-Scores are awarded only through a dated review with a defined scope, version/commit, evidence links, findings, limitations and next actions. Concepts, planned features, concept images, unrun tests and tool inventories do not earn implementation or test credit. Simulation results do not prove physical-world performance.
-
-จะให้คะแนนเมื่อมีรายงานที่ระบุวันที่ ขอบเขต เวอร์ชัน/commit ลิงก์หลักฐาน ข้อค้นพบ ข้อจำกัด และขั้นตอนถัดไปเท่านั้น แนวคิด ฟีเจอร์ที่วางแผน ภาพแนวคิด การทดสอบที่ยังไม่ได้รัน และรายการเครื่องมือ จะไม่ได้คะแนนว่าเป็นการพัฒนาหรือการทดสอบที่เสร็จแล้ว ผลจำลองไม่ใช่หลักฐานยืนยันประสิทธิภาพในโลกจริง
-
-**Scoring method / รายละเอียดเกณฑ์:** [English](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PROJECT_STRENGTH_SCORECARD.md) · [ภาษาไทย](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PROJECT_STRENGTH_SCORECARD_TH.md)
-
-This project-strength review is separate from the documented development stage; it is not certification, safety approval or an investment rating.
-<!-- PUI89_PROJECT_STRENGTH_SCORECARD:END -->
-
-
-
-## Spatial Intelligence integration
-
-See [the project-specific spatial integration profile](docs/spatial-intelligence/README.md). This is a documented integration contract; runtime sensor integration and physical validation remain pending.
-
-<!-- PUI89_EVIDENCE_BACKED_REVIEW:START -->
-## Evidence-backed project review status
-
-**Project:** PUI89 Compact Smart Car  
-**README snapshot (13 November 2026): 0 completed evidence-backed reviews.** This snapshot is not auto-synchronised; the live [PUI89 portfolio review register](https://pui89.github.io/#evidence-backed-project-reviews) is the source of truth.
-
-This is a review-record count, not a statement that development or testing has not occurred. Engineering work, CI runs, test results and simulation evidence may support a review, but do not automatically count as a completed review.
-
-A review is counted only when its record includes all required fields: **completed status, review date, defined scope, reviewer role, outcome, and at least one supporting evidence reference**. Drafts, ratings, stars, page views and comments are excluded.
-
-The portfolio-wide count is published on the [PUI89 website](https://pui89.github.io/#evidence-backed-project-reviews). Refresh this README snapshot when the shared register changes.
-
-**สถานะการทบทวนโครงการที่มีหลักฐาน**  
-**จำนวนการทบทวนที่เสร็จสมบูรณ์: 0** — ยังไม่มีบันทึกการทบทวนที่ผ่านเกณฑ์สำหรับโครงการนี้ในทะเบียนกลาง PUI89
-
-ตัวเลขนี้เป็นจำนวนบันทึกการทบทวน ไม่ได้หมายความว่าไม่มีการพัฒนาหรือทดสอบ งานวิศวกรรม ผล CI การทดสอบ และหลักฐานจากการจำลองอาจใช้ประกอบการทบทวน แต่ไม่นับเป็นการทบทวนที่เสร็จสมบูรณ์โดยอัตโนมัติ
-
-จะนับเมื่อมีสถานะเสร็จสมบูรณ์ วันที่ ขอบเขต บทบาทผู้ทบทวน ผลการทบทวน และหลักฐานอ้างอิงอย่างน้อยหนึ่งรายการครบถ้วนเท่านั้น รายการร่าง คะแนน ดาว ยอดเข้าชม และความคิดเห็นจะไม่นับ
-<!-- PUI89_EVIDENCE_BACKED_REVIEW:END -->
-
-## Fire and flood resilience — safety requirements
-
-PUI89 should design for **early hazard awareness, avoidance, occupant protection and safe emergency response**. Do not describe the vehicle as fireproof, floodproof, amphibious or safe to drive through floodwater. These are proposed requirements; no physical protection, detection accuracy or certification is currently demonstrated.
-
-### Flood risk
-- Use available weather, road and water-depth information to warn about flood-prone routes and advise the driver to avoid flooded roads. If depth, current, road condition or route passability is unknown, show **unknown — do not enter**, not a guessed safe depth.
-- Do not promise a universal safe wading depth. Actual limits depend on the exact vehicle, intake, electrical components, battery location, sealing, water flow and manufacturer guidance.
-- If water rises around the vehicle, prioritize stopping only where safe, evacuation to higher ground when possible, and emergency services. Never instruct occupants to drive through moving or rising water.
-- After suspected water ingress or submersion, do not restart or charge the vehicle; arrange qualified inspection and recovery. Treat hybrid high-voltage components as hazardous.
-- Any future water-ingress protection target must be defined by component, exposure, duration, water conditions and a recognized test method; publish results only after independent testing.
-
-### Fire and thermal-event risk
-- Monitor only documented, supported signals for abnormal temperature, smoke/fire alerts, battery or electrical fault indications. Mark unavailable signals clearly; do not imply AI can detect every fire.
-- Provide clear warnings and an emergency stop/evacuation advisory. If fire, smoke or a thermal event is suspected, occupants should leave the vehicle, move away, avoid opening a hot battery compartment or touching high-voltage parts, and call emergency services.
-- Do not tell occupants to fight a vehicle or traction-battery fire. Follow emergency-service and vehicle-manufacturer guidance.
-- Require professionally engineered separation, protection, venting/pressure management and thermal-event propagation assessment for any future battery or fuel-system design. No fire-containment performance is claimed.
-- HEV adds both fuel-system and high-voltage hazards; safety cases must cover petrol leaks, electrical isolation, battery thermal events and post-crash response.
-
-### AI and verification boundary
-- AI is advisory only: no automatic steering, throttle, braking, propulsion, high-voltage isolation, battery-management or fire-suppression actuation.
-- Unknown, stale, conflicting or failed sensor inputs must trigger an explicit uncertainty warning and conservative advice.
-- Next software gate: create synthetic scenarios for rising water, unknown depth, fast-moving water, sensor loss, smoke/temperature alerts, battery faults, post-crash states and false alarms. Synthetic tests verify logic only, not physical protection.
-- Physical validation requires qualified automotive/fire-safety engineering, controlled laboratory testing, applicable regulations and independent certification before any resilience claim.
-
+Apache License 2.0. See [LICENSE](LICENSE). Third-party images, datasets, model weights, trademarks and other assets retain their own terms and licences.
