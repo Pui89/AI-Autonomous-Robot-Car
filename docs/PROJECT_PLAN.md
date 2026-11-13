@@ -1,4 +1,4 @@
-# Project Plan — PUI89 AI Robot Car
+# Project Plan — PUI89 Compact Smart Car
 
 ## Product definition
 
