@@ -108,7 +108,7 @@ Cross-cutting capabilities:
 | Flood Rescue AI | Multisensor world-state; terrain/water/current simulation; resilient navigation; communications-loss handling; flotation/stability and rescue-safety modelling; human-authorized proposals only. |
 | Multimodal Narcotics Screening AI | RGB and approved sensor evidence fusion; provenance and calibration; uncertainty and human review; false-positive/false-negative benchmarks; privacy and audit trail; no autonomous enforcement. |
 | Homeguard AI Nomad | Sensor fusion for heat, water, humidity, smoke, electrical and structural signals; anomaly/change detection; explainable alerts; offline-first operation; privacy and false-alarm controls. |
-| PUI89 Compact Smart EV | Perception, world-state tracking, agent planning, simulation, predictive maintenance, cybersecurity and driver/human override; no road deployment from unvalidated AI. |
+| PUI89 Compact Smart EV | Compact EV road/obstacle awareness, world-state tracking, simulation, battery/thermal/vehicle-health advisories, cybersecurity and driver/human override; no road deployment from unvalidated AI. |
 | PUI89 AI Robot Motorcycle | Rider-centric perception, stability and hazard modelling, simulation-only control proposals, fault detection, battery/electrical protection and human override; no road deployment from unvalidated AI. |
 
 ## 9. Evidence and release gates
