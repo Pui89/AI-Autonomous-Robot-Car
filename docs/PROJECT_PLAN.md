@@ -1,8 +1,17 @@
-# Project Plan — PUI89 AI Robot Car
+# Project Plan — PUI89 Compact Smart EV
 
 ## Product definition
 
 A future AI-enabled car assistance and robotics research platform. Begin with software, synthetic data, and simulation. This repository is not a functioning vehicle, autonomous-driving system, or road-certified product.
+
+## Compact Smart EV design direction
+
+- Vehicle class: practical four-wheel compact crossover / mini-SUV concept.
+- Product intent: everyday usability, manageable packaging, accessible entry/exit, useful cabin and cargo layout, and space for future sensing/computing evaluation.
+- Powertrain: EV-oriented concept only; battery, motor, charging and platform selection remain open research decisions.
+- No fixed dimensions, seating, payload, range, water-wading, crashworthiness or production specifications are approved by this plan.
+- Software-first and simulation-first; later evaluation of an existing vehicle platform requires a separate engineering, safety, cost and legal review.
+- The driver remains in control. AI outputs are advisory and cannot command steering, throttle, brakes or propulsion.
 
 ## Intended capability areas
 
