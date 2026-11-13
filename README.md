@@ -303,17 +303,3 @@ The portfolio-wide count is published on the [PUI89 website](https://pui89.githu
 
 จะนับเมื่อมีสถานะเสร็จสมบูรณ์ วันที่ ขอบเขต บทบาทผู้ทบทวน ผลการทบทวน และหลักฐานอ้างอิงอย่างน้อยหนึ่งรายการครบถ้วนเท่านั้น รายการร่าง คะแนน ดาว ยอดเข้าชม และความคิดเห็นจะไม่นับ
 <!-- PUI89_EVIDENCE_BACKED_REVIEW:END -->
-
-## Compact Smart Car — powertrain strategy (2026–2027)
-
-**Preferred initial concept: compact full hybrid (HEV), subject to market, supplier, cost and engineering validation.** This is a concept decision, not a selected production platform or a claim that PUI89 has built or tested a vehicle.
-
-- **Initial vehicle direction:** compact, human-driver-first city car with full hybrid (HEV) as the preferred first study. An HEV does not require external plug-in charging; its battery is charged through the vehicle's hybrid system and regenerative braking.
-- **Powertrain-neutral AI:** keep PUI89 AI Core independent of propulsion type. The same vehicle-intelligence software should be adaptable to petrol-only ICE, HEV, plug-in hybrid (PHEV) and battery-electric (BEV) vehicles through versioned, read-only vehicle-context adapters.
-- **No duplicated AI stack:** perception, Observation, WorldState, evidence, uncertainty, hazard reasoning, ActionProposal and FailureReport remain shared. Powertrain-specific telemetry is an adapter concern, not a separate AI Core.
-- **Human control:** AI remains advisory. No ECU/CAN connection, steering, throttle, braking, propulsion, battery-management or charging command is enabled or claimed.
-- **Evidence boundary:** HEV is the preferred concept for 2026–2027 because it avoids dependence on external charging while retaining electric-motor assistance. Fuel economy, reliability, ownership cost, emissions and suitability must be assessed against specific production vehicles and local conditions; no savings or performance are claimed.
-- **Mild hybrid distinction:** do not treat mild hybrid (MHEV) as equivalent to full hybrid (HEV). Compare the actual architecture and independent test data before choosing a supplier or vehicle platform.
-
-**Future compatibility:** preserve interfaces for petrol, HEV, PHEV and BEV context without committing to drivetrain hardware. A future change in market conditions must not require rewriting the Shared AI Core.
-
