@@ -1,1 +1,1 @@
-"""PUI89 AI Robot Car software-only research scaffold."""
+"""PUI89 Compact Hybrid Smart Vehicle software-only research scaffold."""

@@ -1,8 +1,8 @@
-# Implementation Status — PUI89 AI Car
+# Implementation Status — PUI89 Compact Hybrid Smart Vehicle
 
 Last updated: 2026-11-13  
 Repository: Pui89/AI-Autonomous-Robot-Car  
-Overall status: early-stage software and research foundation; engineering v2 and initial Shared AI Core adapter added on a feature branch.
+Overall status: early-stage software and research foundation for a compact hybrid-electric smart-vehicle concept; hybrid architecture and physical vehicle integration remain unselected/unvalidated.
 
 ## Verified repository additions in this branch
 

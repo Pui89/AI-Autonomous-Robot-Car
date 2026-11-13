@@ -1,8 +1,16 @@
-# Project Plan — PUI89 AI Robot Car
+# Project Plan — PUI89 Compact Hybrid Smart Vehicle
 
 ## Product definition
 
-A future AI-enabled car assistance and robotics research platform. Begin with software, synthetic data, and simulation. This repository is not a functioning vehicle, autonomous-driving system, or road-certified product.
+A compact five-door hybrid-electric smart-vehicle concept for practical urban mobility and human-driver-first AI assistance. Begin with software, synthetic data, and simulation. Hybrid architecture (HEV/PHEV) remains undecided and unvalidated. This repository is not a functioning vehicle, autonomous-driving system, or road-certified product.
+
+## Compact vehicle design requirements
+
+- Target form: compact five-door hatchback / small crossover with a short urban footprint, upright cabin, practical entry/exit and useful rear cargo space.
+- Styling: PUI89 Deep Navy, Electric Cyan and Titanium Silver; premium but restrained, with no oversized SUV proportions.
+- Powertrain direction: hybrid-electric concept only. Compare HEV/PHEV options after packaging, cost, maintenance, regulation and safety analysis; do not assume a selected architecture.
+- Smart mobility: advisory hazard awareness, route/weather context, flood-risk warnings, vehicle-health insights, maintenance and emergency assistance through the shared PUI89 AI Core.
+- Human control: no autonomous steering, throttle or braking authority.
 
 ## Intended capability areas
 

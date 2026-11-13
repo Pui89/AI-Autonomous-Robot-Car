@@ -1,6 +1,10 @@
-# Initial Safety Case — PUI89 AI Robot Car
+# Initial Safety Case — PUI89 Compact Hybrid Smart Vehicle
 
 **Status:** Preliminary design record only. Not a certification, safety approval, or proof of vehicle safety.
+
+## Product concept boundary
+
+The proposed product form is a compact five-door hybrid-electric smart vehicle. The hybrid architecture is not selected, integrated or validated. Compact packaging and hybrid propulsion introduce future hazards requiring qualified vehicle engineering, battery/fuel-system assessment, crashworthiness analysis and regulatory review.
 
 ## Safety objective
 
