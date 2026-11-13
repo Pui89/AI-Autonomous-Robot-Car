@@ -4,6 +4,20 @@
 
 A future AI-enabled car assistance and robotics research platform. Begin with software, synthetic data, and simulation. This repository is not a functioning vehicle, autonomous-driving system, or road-certified product.
 
+## Compact Smart Car powertrain strategy (2026–2027)
+
+**Preferred initial study: compact full hybrid (HEV).** This is a design direction only; no vehicle, drivetrain, supplier, fuel-economy result or road validation is claimed.
+
+1. Start with a compact, human-driver-first vehicle concept and evaluate full HEV as the preferred first powertrain.
+2. Keep the PUI89 AI Core propulsion-neutral so it can support petrol-only, HEV, PHEV and BEV vehicles.
+3. Use versioned, read-only vehicle-context adapters. Powertrain telemetry must not create a separate AI stack or grant physical authority.
+4. Prefer full HEV over mild hybrid when meaningful electric-motor assistance is a requirement, but make any final selection using specific vehicle specifications, local serviceability, lifecycle cost and independent evidence.
+5. Do not require external charging for the initial HEV concept. PHEV/BEV support remains an architectural compatibility goal, not a committed product variant.
+
+**Safety boundary:** no ECU/CAN connection, steering, throttle, braking, propulsion, battery-management or charging control. AI outputs remain advisory and the human driver retains control.
+
+**Next gate:** define a vendor-neutral vehicle-context schema and synthetic conformance fixtures for engine, motor, battery, fuel, energy-flow and fault-status observations. Validate units, timestamps, provenance, freshness, uncertainty and missing/conflicting data before considering any real vehicle interface.
+
 ## Intended capability areas
 
 - Environmental perception and hazard awareness.
