@@ -11,7 +11,7 @@ Protect people, animals, assets, data, and project integrity through evidence-le
 2. Flood Rescue AI — flood/disaster rescue-robot concept.
 3. Multimodal Narcotics Screening AI — multimodal screening decision-support and robotic concept.
 4. Homeguard AI Nomad — home/environment monitoring platform and future robot concept.
-5. Compact Smart EV — vehicle intelligence and driver-assistance research.
+5. PUI89 Compact Smart EV — compact electric vehicle intelligence and driver-assistance research.
 6. AI Motorcycle — rider-focused vehicle intelligence research.
 
 ## 1. Physical safety and environmental protection
