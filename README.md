@@ -98,7 +98,7 @@ The concept uses a premium compact electric crossover form in PUI89 deep navy an
 
 ## EasyRide: inclusive, comfortable and practical mobility
 
-PUI89 Compact Smart EV adopts **EasyRide** as a human-centred design direction: make everyday driving easier, more comfortable and more supportive for as many people as possible. The concept is intended to consider women, older adults, new and less-confident drivers, families, and people with different body sizes, strengths and accessibility needs.
+PUI89 Compact Smart EV adopts a human-centred design direction: make everyday driving easier, more comfortable and more supportive for as many people as possible. The concept is intended to consider women, older adults, new and less-confident drivers, families, and people with different body sizes, strengths and accessibility needs.
 
 - **Safety-first experience:** clear visibility, understandable warnings, conservative driver assistance, intuitive controls and reduced distraction are design priorities. Safety performance must be demonstrated through engineering analysis and testing; it is not yet validated.
 - **Comfortable, gentle ride:** investigate supportive seating, easy entry and exit, accessible reach, smooth ride characteristics, low-effort controls, climate comfort and a quiet cabin. These are design targets, not verified vehicle features.
