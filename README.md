@@ -96,7 +96,7 @@ The concept uses a premium compact electric crossover form in PUI89 deep navy an
 
 **The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, built prototype, or performance claim.** Sensor selection and physical packaging remain future engineering work.
 
-## EasyRide: inclusive, comfortable and practical mobility
+## Human-centred compact EV design
 
 PUI89 Compact Smart EV adopts a human-centred design direction: make everyday driving easier, more comfortable and more supportive for as many people as possible. The concept is intended to consider women, older adults, new and less-confident drivers, families, and people with different body sizes, strengths and accessibility needs.
 
@@ -164,7 +164,7 @@ See [PUI89 AI & Advanced Engineering Stack](docs/FREE_AI_TECH_STACK.md). Every t
 
 ## Current truth
 
-This repository contains research documentation and an initial software-only contract/safety prototype. It does not contain a functioning car, validated perception model, real-time vehicle integration, autonomous driving capability, or certified safety system. The local contract types are provisional until aligned with the canonical shared PUI89 AI Core. EasyRide features above are design goals and research requirements, not implemented or validated vehicle capabilities.
+This repository contains research documentation and an initial software-only contract/safety prototype. It does not contain a functioning car, validated perception model, real-time vehicle integration, autonomous driving capability, or certified safety system. The local contract types are provisional until aligned with the canonical shared PUI89 AI Core. Human-centred design goals above are design goals and research requirements, not implemented or validated vehicle capabilities.
 
 ## PUI89 portfolio links
 
