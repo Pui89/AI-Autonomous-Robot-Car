@@ -1,10 +1,10 @@
-# PUI89 AI Car Architecture
+# PUI89 Compact Smart EV Architecture
 
 **Status:** Software-only research architecture. Simulation first; no physical vehicle control or validated vehicle integration.
 
 ## Product architecture
 
-Premium four-door hybrid utility SUV concept, four occupants, 450–520 kg occupant-inclusive payload target, flood-resilient design intent and global-market engineering objective. Hybrid subtype and chassis architecture remain open trade-study decisions. These are requirements and design targets, not demonstrated vehicle specifications.
+Practical four-wheel compact electric crossover / mini-SUV concept. EV-oriented product direction only; dimensions, seat count, payload, battery, motor, inverter, charging, range and chassis remain open engineering decisions. No vehicle specifications or performance are demonstrated.
 
 ## Intelligence pipeline
 
@@ -12,7 +12,7 @@ Synthetic or approved inputs -> validation -> Shared AI Core Observation -> Worl
 
 ## Shared AI Core interface
 
-The AI Car adapter in `pui89_car/shared_contract_adapter.py` maps the existing signal/advisory records to the canonical Shared AI Core v0.1.0 contract shapes. The project manifest and synthetic positive/negative fixtures are declared in `pui89-adapter.json`.
+The Compact Smart EV adapter in `pui89_car/shared_contract_adapter.py` maps the existing signal/advisory records to the canonical Shared AI Core v0.1.0 contract shapes. The project manifest and synthetic positive/negative fixtures are declared in `pui89-adapter.json`.
 
 - Observation preserves source, modality, timestamp, quality and provenance references.
 - WorldState carries evidence references, explicit unknowns and conflicts.
@@ -36,7 +36,7 @@ This is a software baseline, not a perception model, vehicle diagnostic integrat
 
 ## 24-module catalogue
 
-See [AI Car Module Catalogue](AI_CAR_MODULE_CATALOG.md) for the proposed module list and boundaries. See [Master Engineering Specification v2.0](MASTER_ENGINEERING_SPEC_V2.md) for product, chassis, hybrid, flood-resilience and validation requirements.
+See [Compact Smart EV Module Catalogue](AI_CAR_MODULE_CATALOG.md) for the proposed module list and boundaries. See [Master Engineering Specification v2.0](MASTER_ENGINEERING_SPEC_V2.md) for product, chassis, compact EV, packaging, energy-system and validation requirements.
 
 ## Architecture rules
 
