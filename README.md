@@ -84,9 +84,24 @@ PUI89 selects and integrates technologies according to capability, provenance, s
 
 ## Design concept
 
-The concept uses a premium electric crossover form in PUI89 deep navy and electric cyan. The illustrative sensor layout communicates a future perception envelope (camera, radar, lidar and proximity sensing), while the software architecture remains human-driver-first: AI produces evidence-linked advisories, not steering, throttle or braking commands.
+The concept direction is a compact smart city car in PUI89 deep navy and electric cyan. The preferred initial powertrain study is full hybrid (HEV), while the AI architecture remains compatible with petrol-only, HEV, PHEV and BEV vehicles. Existing artwork is illustrative and does not establish a selected drivetrain, verified sensor layout, production design or built prototype.
 
-**The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, built prototype, or performance claim.** Sensor selection and physical packaging remain future engineering work.
+**The artwork is a design visualization, not a production CAD model, bill of materials, verified sensor layout, selected powertrain, built prototype, or performance claim.** Sensor selection, vehicle packaging and drivetrain selection remain future engineering work.
+
+## Compact Smart Car — powertrain strategy (2026–2027)
+
+**Preferred initial concept: compact full hybrid (HEV), subject to market, supplier, cost and engineering validation.** This is a concept decision, not a selected production platform or a claim that PUI89 has built or tested a vehicle.
+
+- **Initial vehicle direction:** compact, human-driver-first city car with full hybrid (HEV) as the preferred first study. An HEV does not require external plug-in charging; its battery is charged through the vehicle's hybrid system and regenerative braking.
+- **Powertrain-neutral AI:** keep PUI89 AI Core independent of propulsion type. The same vehicle-intelligence software should be adaptable to petrol-only ICE, HEV, plug-in hybrid (PHEV) and battery-electric (BEV) vehicles through versioned, read-only vehicle-context adapters.
+- **No duplicated AI stack:** perception, Observation, WorldState, evidence, uncertainty, hazard reasoning, ActionProposal and FailureReport remain shared. Powertrain-specific telemetry is an adapter concern, not a separate AI Core.
+- **Human control:** AI remains advisory. No ECU/CAN connection, steering, throttle, braking, propulsion, battery-management or charging command is enabled or claimed.
+- **Evidence boundary:** HEV is the preferred concept for 2026–2027 because it avoids dependence on external charging while retaining electric-motor assistance. Fuel economy, reliability, ownership cost, emissions and suitability must be assessed against specific production vehicles and local conditions; no savings or performance are claimed.
+- **Mild hybrid distinction:** do not treat mild hybrid (MHEV) as equivalent to full hybrid (HEV). Compare the actual architecture and independent test data before choosing a supplier or vehicle platform.
+
+**Future compatibility:** preserve interfaces for petrol, HEV, PHEV and BEV context without committing to drivetrain hardware. A future change in market conditions must not require rewriting the Shared AI Core.
+
+
 
 ## EasyRide: inclusive, comfortable and practical mobility
 
@@ -288,3 +303,28 @@ The portfolio-wide count is published on the [PUI89 website](https://pui89.githu
 
 จะนับเมื่อมีสถานะเสร็จสมบูรณ์ วันที่ ขอบเขต บทบาทผู้ทบทวน ผลการทบทวน และหลักฐานอ้างอิงอย่างน้อยหนึ่งรายการครบถ้วนเท่านั้น รายการร่าง คะแนน ดาว ยอดเข้าชม และความคิดเห็นจะไม่นับ
 <!-- PUI89_EVIDENCE_BACKED_REVIEW:END -->
+
+## Fire and flood resilience — safety requirements
+
+PUI89 should design for **early hazard awareness, avoidance, occupant protection and safe emergency response**. Do not describe the vehicle as fireproof, floodproof, amphibious or safe to drive through floodwater. These are proposed requirements; no physical protection, detection accuracy or certification is currently demonstrated.
+
+### Flood risk
+- Use available weather, road and water-depth information to warn about flood-prone routes and advise the driver to avoid flooded roads. If depth, current, road condition or route passability is unknown, show **unknown — do not enter**, not a guessed safe depth.
+- Do not promise a universal safe wading depth. Actual limits depend on the exact vehicle, intake, electrical components, battery location, sealing, water flow and manufacturer guidance.
+- If water rises around the vehicle, prioritize stopping only where safe, evacuation to higher ground when possible, and emergency services. Never instruct occupants to drive through moving or rising water.
+- After suspected water ingress or submersion, do not restart or charge the vehicle; arrange qualified inspection and recovery. Treat hybrid high-voltage components as hazardous.
+- Any future water-ingress protection target must be defined by component, exposure, duration, water conditions and a recognized test method; publish results only after independent testing.
+
+### Fire and thermal-event risk
+- Monitor only documented, supported signals for abnormal temperature, smoke/fire alerts, battery or electrical fault indications. Mark unavailable signals clearly; do not imply AI can detect every fire.
+- Provide clear warnings and an emergency stop/evacuation advisory. If fire, smoke or a thermal event is suspected, occupants should leave the vehicle, move away, avoid opening a hot battery compartment or touching high-voltage parts, and call emergency services.
+- Do not tell occupants to fight a vehicle or traction-battery fire. Follow emergency-service and vehicle-manufacturer guidance.
+- Require professionally engineered separation, protection, venting/pressure management and thermal-event propagation assessment for any future battery or fuel-system design. No fire-containment performance is claimed.
+- HEV adds both fuel-system and high-voltage hazards; safety cases must cover petrol leaks, electrical isolation, battery thermal events and post-crash response.
+
+### AI and verification boundary
+- AI is advisory only: no automatic steering, throttle, braking, propulsion, high-voltage isolation, battery-management or fire-suppression actuation.
+- Unknown, stale, conflicting or failed sensor inputs must trigger an explicit uncertainty warning and conservative advice.
+- Next software gate: create synthetic scenarios for rising water, unknown depth, fast-moving water, sensor loss, smoke/temperature alerts, battery faults, post-crash states and false alarms. Synthetic tests verify logic only, not physical protection.
+- Physical validation requires qualified automotive/fire-safety engineering, controlled laboratory testing, applicable regulations and independent certification before any resilience claim.
+

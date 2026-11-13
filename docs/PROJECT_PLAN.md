@@ -4,6 +4,44 @@
 
 A future AI-enabled car assistance and robotics research platform. Begin with software, synthetic data, and simulation. This repository is not a functioning vehicle, autonomous-driving system, or road-certified product.
 
+## Compact Smart Car powertrain strategy (2026–2027)
+
+**Preferred initial study: compact full hybrid (HEV).** This is a design direction only; no vehicle, drivetrain, supplier, fuel-economy result or road validation is claimed.
+
+1. Start with a compact, human-driver-first vehicle concept and evaluate full HEV as the preferred first powertrain.
+2. Keep the PUI89 AI Core propulsion-neutral so it can support petrol-only, HEV, PHEV and BEV vehicles.
+3. Use versioned, read-only vehicle-context adapters. Powertrain telemetry must not create a separate AI stack or grant physical authority.
+4. Prefer full HEV over mild hybrid when meaningful electric-motor assistance is a requirement, but make any final selection using specific vehicle specifications, local serviceability, lifecycle cost and independent evidence.
+5. Do not require external charging for the initial HEV concept. PHEV/BEV support remains an architectural compatibility goal, not a committed product variant.
+
+**Safety boundary:** no ECU/CAN connection, steering, throttle, braking, propulsion, battery-management or charging control. AI outputs remain advisory and the human driver retains control.
+
+**Next gate:** define a vendor-neutral vehicle-context schema and synthetic conformance fixtures for engine, motor, battery, fuel, energy-flow and fault-status observations. Validate units, timestamps, provenance, freshness, uncertainty and missing/conflicting data before considering any real vehicle interface.
+
+## Fire and flood resilience — safety requirements
+
+PUI89 should design for **early hazard awareness, avoidance, occupant protection and safe emergency response**. Do not describe the vehicle as fireproof, floodproof, amphibious or safe to drive through floodwater. These are proposed requirements; no physical protection, detection accuracy or certification is currently demonstrated.
+
+### Flood risk
+- Use available weather, road and water-depth information to warn about flood-prone routes and advise the driver to avoid flooded roads. If depth, current, road condition or route passability is unknown, show **unknown — do not enter**, not a guessed safe depth.
+- Do not promise a universal safe wading depth. Actual limits depend on the exact vehicle, intake, electrical components, battery location, sealing, water flow and manufacturer guidance.
+- If water rises around the vehicle, prioritize stopping only where safe, evacuation to higher ground when possible, and emergency services. Never instruct occupants to drive through moving or rising water.
+- After suspected water ingress or submersion, do not restart or charge the vehicle; arrange qualified inspection and recovery. Treat hybrid high-voltage components as hazardous.
+- Any future water-ingress protection target must be defined by component, exposure, duration, water conditions and a recognized test method; publish results only after independent testing.
+
+### Fire and thermal-event risk
+- Monitor only documented, supported signals for abnormal temperature, smoke/fire alerts, battery or electrical fault indications. Mark unavailable signals clearly; do not imply AI can detect every fire.
+- Provide clear warnings and an emergency stop/evacuation advisory. If fire, smoke or a thermal event is suspected, occupants should leave the vehicle, move away, avoid opening a hot battery compartment or touching high-voltage parts, and call emergency services.
+- Do not tell occupants to fight a vehicle or traction-battery fire. Follow emergency-service and vehicle-manufacturer guidance.
+- Require professionally engineered separation, protection, venting/pressure management and thermal-event propagation assessment for any future battery or fuel-system design. No fire-containment performance is claimed.
+- HEV adds both fuel-system and high-voltage hazards; safety cases must cover petrol leaks, electrical isolation, battery thermal events and post-crash response.
+
+### AI and verification boundary
+- AI is advisory only: no automatic steering, throttle, braking, propulsion, high-voltage isolation, battery-management or fire-suppression actuation.
+- Unknown, stale, conflicting or failed sensor inputs must trigger an explicit uncertainty warning and conservative advice.
+- Next software gate: create synthetic scenarios for rising water, unknown depth, fast-moving water, sensor loss, smoke/temperature alerts, battery faults, post-crash states and false alarms. Synthetic tests verify logic only, not physical protection.
+- Physical validation requires qualified automotive/fire-safety engineering, controlled laboratory testing, applicable regulations and independent certification before any resilience claim.
+
 ## Intended capability areas
 
 - Environmental perception and hazard awareness.
