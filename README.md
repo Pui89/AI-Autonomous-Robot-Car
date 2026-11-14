@@ -56,6 +56,27 @@ These are design requirements and software research topics, not validated physic
 
 PUI89 uses a traceable sourcing workflow for materials, mechanical parts, sensors, compute, power and control components. See the [bilingual Hardware & Materials Sourcing guide](https://pui89.github.io/materials.html) for the process covering exact manufacturer/model identification, Thailand and international supplier discovery, country-of-origin evidence, dated pricing and availability, lead times, shipping, compatibility checks and verification gates. Product-specific candidates are added only when supported by evidence; research candidates are not purchases or validated hardware.
 
+### Prototype materials & cost snapshot
+
+**Planning allowance for one research prototype: ฿13,500–69,000.** This is a preliminary estimate from the [PUI89 project-specific BOM](https://pui89.github.io/materials.html#project-boms), not a supplier quotation or verified current market price.
+
+Software-first driver-awareness research using removable, non-invasive sensors and read-only vehicle data.
+
+| Main item | Prototype quantity | Purpose |
+|---|---:|---|
+| Forward RGB camera | 1 | Road observation |
+| Rear/side RGB cameras | 2 | Rear and side observation |
+| GNSS receiver + IMU | 1 each | Position and motion context |
+| Passive OBD-II interface | 1 | Read-only vehicle data |
+| Edge compute | 1 shared | Reuse shared unit first |
+| Protected power, fuses and mounts | 1 set | Safe, non-invasive installation |
+
+**Special engineering / purchase gate:** Keep the system advisory-only and non-invasive. Do not connect to steering, throttle, braking or other vehicle actuation. Confirm camera placement, driver distraction, electrical protection, vehicle warranty and legal requirements before testing.
+
+**Shared engineering bench (tracked separately):** approximately ฿16,500–46,000 if the existing development computer is reused. This is a portfolio-level allowance for reusable compute, one RGB-D camera, bench power supply/multimeter, two microcontroller boards and reusable tools/wiring/adapters; it is not added to each project total. Allocate each shared item once, not once per product.
+
+**Cost status:** exact manufacturer/model, manufacturing origin, supplier, stock, lead time and dated prices remain to be verified. Freight, insurance, duty, VAT, brokerage, local delivery, custom fabrication labour and certification are not priced here; calculate Thai landed cost only from dated quotations. Quantities are for one prototype; no purchase or supplier commitment is authorised. Software-first work can continue with available computing and appropriately licensed open-source tools before hardware procurement.
+
 ## Perception & Task Intelligence (PTI)
 
 **Role in this product:** provide driver-centred road and vehicle-context awareness for the SUV concept. PTI is the shared PUI89 perception-and-task framework; the capabilities below are intended research and evaluation tasks, not production vehicle features.
