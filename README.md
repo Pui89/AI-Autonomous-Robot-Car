@@ -127,3 +127,20 @@ This repository is a research and software foundation. It does **not** contain a
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE). Third-party images, datasets, model weights, trademarks and other assets retain their own terms and licences.
+
+## AI Engineering Intelligence & Flood-Resilient Vehicle Design
+
+PUI89 Engineering Intelligence supports vehicle requirements, driver-assistance research, hazard analysis, simulation and evidence review. **Flood tolerance is a design requirement to investigate, not an existing capability or permission to enter floodwater.**
+
+**Product-specific design priorities**
+- Flood-resilient architecture: study body sealing, door apertures, vents, connectors, sensor placement, drainage, corrosion protection and post-exposure inspection. Any water-exposure limit requires qualified automotive engineering and independent testing.
+- Powertrain/electrical safety: compare HEV/ICE/PHEV/BEV hazards; assess battery enclosure, high-voltage isolation design, fuel-system exposure, thermal propagation and recovery. AI cannot control or isolate these systems.
+- Chassis/underbody: assess ground clearance, underbody protection, suspension travel, tyre traction, wet braking, corrosion and service access.
+- Structure/occupants: evaluate crashworthiness, restraints, rollover protection, child-seat/accessibility requirements, visibility and occupant egress.
+- Thermal/climate engineering: study cooling, heat soak, humidity, dust, water spray, HVAC and sensor-window contamination.
+- Road-hazard intelligence: detect water-covered roads, road edges, debris, potholes, visibility loss and closures; ingest measured water-level/current sources only with provenance and freshness.
+- Driver authority: conservative warnings and route avoidance. Unknown depth, current, road condition or passability means **do not enter**. Never recommend crossing moving or rising floodwater.
+
+**AI methods to evaluate:** multimodal road-scene perception, sensor fusion, privacy-approved driver-context awareness, predictive maintenance, energy/thermal analytics, hazard forecasting, CFD/FEA-supported studies and vehicle digital twins.
+
+**Evidence gates:** requirements/hazard analysis → synthetic scenarios → validated simulator studies → component environmental/electrical tests → qualified vehicle-level testing and regulatory review. No wading-depth, waterproof, crash-rating, autonomous-driving or fire-resistance claim is established.
