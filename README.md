@@ -52,6 +52,10 @@ The intended AI role is **awareness and avoidance**, not proving that the vehicl
 
 These are design requirements and software research topics, not validated physical capabilities.
 
+## Hardware & Materials Sourcing
+
+PUI89 uses a traceable sourcing workflow for materials, mechanical parts, sensors, compute, power and control components. See the [bilingual Hardware & Materials Sourcing guide](https://pui89.github.io/materials.html) for the process covering exact manufacturer/model identification, Thailand and international supplier discovery, country-of-origin evidence, dated pricing and availability, lead times, shipping, compatibility checks and verification gates. Product-specific candidates are added only when supported by evidence; research candidates are not purchases or validated hardware.
+
 ## Perception & Task Intelligence (PTI)
 
 **Role in this product:** provide driver-centred road and vehicle-context awareness for the SUV concept. PTI is the shared PUI89 perception-and-task framework; the capabilities below are intended research and evaluation tasks, not production vehicle features.
